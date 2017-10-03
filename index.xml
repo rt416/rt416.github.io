@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ryutaro Tanno on Ryutaro Tanno</title>
+    <link>https://rt416.github.io/</link>
+    <description>Recent content in Ryutaro Tanno on Ryutaro Tanno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Exploring Uncertainty in dMRI Super-resolution via Probabilistic CNNs</title>
+      <link>https://rt416.github.io/talk/hms/</link>
+      <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/hms/</guid>
+      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.benoitscherrer.com/&#34; target=&#34;_blank&#34;&gt;Dr. Bernoit Scherrer&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring Uncertainty in dMRI Super-resolution via Probabilistic CNNs</title>
+      <link>https://rt416.github.io/talk/nyu/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/nyu/</guid>
+      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.cims.nyu.edu/~cfgranda/&#34; target=&#34;_blank&#34;&gt;Dr. Carlos Fernandez-Granda&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exploring Uncertainty in dMRI Super-resolution via Probabilistic CNNs</title>
+      <link>https://rt416.github.io/talk/mit/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/mit/</guid>
+      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://people.csail.mit.edu/ruizhi/&#34; target=&#34;_blank&#34;&gt;Ruizhi Liao&lt;/a&gt; and &lt;a href=&#34;http://people.csail.mit.edu/polina/&#34; target=&#34;_blank&#34;&gt;Prof. Pollina Golland&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title> Bayesian Image Quality Transfer with CNNs: Exploring Uncertainty in dMRI Super-Resolution</title>
+      <link>https://rt416.github.io/publication/biqt-rf/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/biqt-rf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Quality Transfer and Applications in Diffusion MRI</title>
+      <link>https://rt416.github.io/publication/iqt-nimg/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/iqt-nimg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Bayesian Image Quality Transfer</title>
+      <link>https://rt416.github.io/publication/biqt-cnn/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/biqt-cnn/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

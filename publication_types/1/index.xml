@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Ryutaro Tanno</title>
+    <link>https://rt416.github.io/publication_types/1/</link>
+    <description>Recent content in 1 on Ryutaro Tanno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/1/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title> Bayesian Image Quality Transfer with CNNs: Exploring Uncertainty in dMRI Super-Resolution</title>
+      <link>https://rt416.github.io/publication/biqt-rf/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/biqt-rf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Bayesian Image Quality Transfer</title>
+      <link>https://rt416.github.io/publication/biqt-cnn/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/biqt-cnn/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
