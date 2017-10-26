@@ -11,6 +11,15 @@
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>TBA</title>
+      <link>https://rt416.github.io/talk/ucl/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/ucl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Exploring Uncertainty in dMRI Super-resolution via Probabilistic CNNs</title>
       <link>https://rt416.github.io/talk/hms/</link>
       <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
