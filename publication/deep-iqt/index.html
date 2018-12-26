@@ -39,11 +39,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://rt416.github.io/publication/biqt-rf/">
+  <link rel="canonical" href="https://rt416.github.io/publication/deep-iqt/">
 
   
 
-  <title> Bayesian Image Quality Transfer with CNNs: Exploring Uncertainty in dMRI Super-Resolution | Ryutaro Tanno</title>
+  <title> Deeper Image Quality Transfer: Training Low-Memory Neural Networks for 3D Images | Ryutaro Tanno</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -119,10 +119,10 @@
 
 
   <div class="container pub-title">
-    <h1 itemprop="name"> Bayesian Image Quality Transfer with CNNs: Exploring Uncertainty in dMRI Super-Resolution</h1>
+    <h1 itemprop="name"> Deeper Image Quality Transfer: Training Low-Memory Neural Networks for 3D Images</h1>
     <span class="pub-authors" itemprop="author">
       
-      Ryutaro Tanno, Daniel E. Worrall, Aurobrata Ghosh, Enrico Kaden, Stamatios N. Sotiropoulos, Antonio Criminisi, Daniel C. Alexander
+      Stefano B. Blumberg, Ryutaro Tanno, Iasonas Kokkinos, Daniel C. Alexander
       
     </span>
     <span class="pull-right">
@@ -131,35 +131,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=%20Bayesian%20Image%20Quality%20Transfer%20with%20CNNs%3a%20Exploring%20Uncertainty%20in%20dMRI%20Super-Resolution&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fbiqt-rf%2f"
+         href="https://twitter.com/intent/tweet?text=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frt416.github.io%2fpublication%2fbiqt-rf%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fbiqt-rf%2f&amp;title=%20Bayesian%20Image%20Quality%20Transfer%20with%20CNNs%3a%20Exploring%20Uncertainty%20in%20dMRI%20Super-Resolution"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f&amp;title=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frt416.github.io%2fpublication%2fbiqt-rf%2f&amp;title=%20Bayesian%20Image%20Quality%20Transfer%20with%20CNNs%3a%20Exploring%20Uncertainty%20in%20dMRI%20Super-Resolution"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f&amp;title=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=%20Bayesian%20Image%20Quality%20Transfer%20with%20CNNs%3a%20Exploring%20Uncertainty%20in%20dMRI%20Super-Resolution&amp;body=https%3a%2f%2frt416.github.io%2fpublication%2fbiqt-rf%2f">
+         href="mailto:?subject=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images&amp;body=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -174,9 +174,11 @@
 <div class="article-container">
 
   
+  <img src="/img/images/biqt_cnn.png" class="pub-banner" itemprop="image">
+  
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">In this work, we investigate the value of uncertainty modelling in 3D super-resolution with convolutional neural networks (CNNs). Deep learning has shown success in a plethora of medical image transformation problems, such as super-resolution (SR) and image synthesis. However, the highly ill-posed nature of such problems results in inevitable ambiguity in the learning of networks. We propose to account for intrinsic uncertainty through a per-patch heteroscedastic noise model and for parameter uncertainty through approximate Bayesian inference in the form of variational dropout. We show that the combined benefits of both lead to the state-of-the-art performance SR of diffusion MR brain images in terms of errors compared to ground truth. We further show that the reduced error scores produce tangible benefits in downstream tractography. In addition, the probabilistic nature of the methods naturally confers a mechanism to quantify uncertainty over the super-resolved output. We demonstrate through experiments on both healthy and pathological brains the potential utility of such an uncertainty measure in the risk assessment of the super-resolved images for subsequent clinical use.</p>
+  <p class="pub-abstract" itemprop="text">In this paper we address the memory demands that come with the processing of 3-dimensional, high-resolution, multi-channeled medical images in deep learning. We exploit memory-efficient backpropagation techniques, to reduce the memory complexity of network training from being linear in the network’s depth, to being roughly constant – permitting us to elongate deep architectures with negligible memory increase. We evaluate our methodology in the paradigm of Image Quality Transfer, whilst noting its potential application to various tasks that use deep learning. We study the impact of depth on accuracy and show that deeper models have more predictive power, which may exploit larger training sets. We obtain substantially better results than the previous state-of-the-art model with a slight memory increase, reducing the root-mean-squared-error by 13%. Our code is publicly available.</p>
 
   
   <div class="row">
@@ -203,7 +205,7 @@
     <div class="col-sm-10">
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9">In <em>MICCAI</em>, Oral (top ~4%) and winner of Young Scientist Award</div>
+        <div class="col-xs-12 col-sm-9">In <em>MICCAI</em></div>
       </div>
     </div>
     <div class="col-sm-1"></div>
@@ -216,7 +218,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
         <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-          May, 2017
+          September, 2018
         </div>
       </div>
     </div>
@@ -236,25 +238,21 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://rt416.github.io/pdf/tanno_miccai_2017.pdf">
+<a class="btn btn-primary btn-outline" href="https://rt416.github.io/pdf/bloomsberg_miccai_2018.pdf">
   PDF
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="https://rt416.github.io/pdf/tanno_miccai_2017_slides.pdf">
-  Slides
+
+
+<a class="btn btn-primary btn-outline" href="https://github.com/sbb-gh/Deeper-Image-Quality-Transfer-Training-Low-Memory-Neural-Networks-for-3D-Images">
+  Code
 </a>
 
 
 
 
-
-
-<a class="btn btn-primary btn-outline" href="https://rt416.github.io/pdf/tanno_miccai_2017_poster.pdf">
-  Poster
-</a>
-
-<a class="btn btn-primary btn-outline" href="https://link.springer.com/chapter/10.1007/978-3-319-66182-7_70">
+<a class="btn btn-primary btn-outline" href="https://link.springer.com/chapter/10.1007/978-3-030-00928-1_14">
   Link
 </a>
 
@@ -277,13 +275,10 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://rt416.github.io/publication/iqt-nimg/"><span
-      aria-hidden="true">&larr;</span> Image Quality Transfer and Applications in Diffusion MRI</a></li>
+    <li class="previous"><a href="https://rt416.github.io/publication/biqt-rf/"><span
+      aria-hidden="true">&larr;</span>  Bayesian Image Quality Transfer with CNNs: Exploring Uncertainty in dMRI Super-Resolution</a></li>
     
 
-    
-    <li class="next"><a href="https://rt416.github.io/publication/deep-iqt/"> Deeper Image Quality Transfer: Training Low-Memory Neural Networks for 3D Images <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
