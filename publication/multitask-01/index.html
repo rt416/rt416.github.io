@@ -39,11 +39,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://rt416.github.io/publication/deep-iqt/">
+  <link rel="canonical" href="https://rt416.github.io/publication/multitask-01/">
 
   
 
-  <title> Deeper Image Quality Transfer: Training Low-Memory Neural Networks for 3D Images | Ryutaro Tanno</title>
+  <title>Uncertainty in multitask learning: joint representations for probabilistic MR-only radiotherapy planning | Ryutaro Tanno</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -119,10 +119,10 @@
 
 
   <div class="container pub-title">
-    <h1 itemprop="name"> Deeper Image Quality Transfer: Training Low-Memory Neural Networks for 3D Images</h1>
+    <h1 itemprop="name">Uncertainty in multitask learning: joint representations for probabilistic MR-only radiotherapy planning</h1>
     <span class="pub-authors" itemprop="author">
       
-      Stefano B. Blumberg, Ryutaro Tanno, Iasonas Kokkinos, Daniel C. Alexander
+      Felix J.S. Bragman, Ryutaro Tanno, Zach Eaton-Rosen, Wenqi Li, David J. Hawkes, Sebastien Ourselin, Jamie R. McClelland, Daniel C. Alexander, M. Jorge Cardoso
       
     </span>
     <span class="pull-right">
@@ -131,35 +131,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f"
+         href="https://twitter.com/intent/tweet?text=Uncertainty%20in%20multitask%20learning%3a%20joint%20representations%20for%20probabilistic%20MR-only%20radiotherapy%20planning&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fmultitask-01%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frt416.github.io%2fpublication%2fmultitask-01%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f&amp;title=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fmultitask-01%2f&amp;title=Uncertainty%20in%20multitask%20learning%3a%20joint%20representations%20for%20probabilistic%20MR-only%20radiotherapy%20planning"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f&amp;title=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frt416.github.io%2fpublication%2fmultitask-01%2f&amp;title=Uncertainty%20in%20multitask%20learning%3a%20joint%20representations%20for%20probabilistic%20MR-only%20radiotherapy%20planning"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images&amp;body=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f">
+         href="mailto:?subject=Uncertainty%20in%20multitask%20learning%3a%20joint%20representations%20for%20probabilistic%20MR-only%20radiotherapy%20planning&amp;body=https%3a%2f%2frt416.github.io%2fpublication%2fmultitask-01%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -178,7 +178,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">In this paper we address the memory demands that come with the processing of 3-dimensional, high-resolution, multi-channeled medical images in deep learning. We exploit memory-efficient backpropagation techniques, to reduce the memory complexity of network training from being linear in the network’s depth, to being roughly constant – permitting us to elongate deep architectures with negligible memory increase. We evaluate our methodology in the paradigm of Image Quality Transfer, whilst noting its potential application to various tasks that use deep learning. We study the impact of depth on accuracy and show that deeper models have more predictive power, which may exploit larger training sets. We obtain substantially better results than the previous state-of-the-art model with a slight memory increase, reducing the root-mean-squared-error by 13%. Our code is publicly available.</p>
+  <p class="pub-abstract" itemprop="text">Multi-task neural network architectures provide a mechanism that jointly integrates information from distinct sources. It is ideal in the context of MR-only radiotherapy planning as it can jointly regress a synthetic CT (synCT) scan and segment organs-at-risk (OAR) from MRI. We propose a probabilistic multi-task network that estimates: 1) intrinsic uncertainty through a heteroscedastic noise model for spatially-adaptive task loss weighting and 2) parameter uncertainty through approximate Bayesian inference. This allows sampling of multiple segmentations and synCTs that share their network representation. We test our model on prostate cancer scans and show that it produces more accurate and consistent synCTs with a better estimation in the variance of the errors, state of the art results in OAR segmentation and a methodology for quality assurance in radiotherapy treatment planning.</p>
 
   
   <div class="row">
@@ -238,7 +238,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://rt416.github.io/pdf/bloomsberg_miccai_2018.pdf">
+<a class="btn btn-primary btn-outline" href="https://rt416.github.io/pdf/bragman_miccai_2018.pdf">
   PDF
 </a>
 
@@ -252,7 +252,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://link.springer.com/chapter/10.1007/978-3-030-00928-1_14">
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/1806.06595">
   Link
 </a>
 
@@ -275,10 +275,13 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://rt416.github.io/publication/autodvt/"><span
-      aria-hidden="true">&larr;</span> AutoDVT: Joint Real-Time Classification for Vein Compressibility Analysis in Deep Vein Thrombosis Ultrasound Diagnostics</a></li>
+    <li class="previous"><a href="https://rt416.github.io/publication/biqt-rf/"><span
+      aria-hidden="true">&larr;</span>  Bayesian Image Quality Transfer with CNNs: Exploring Uncertainty in dMRI Super-Resolution</a></li>
     
 
+    
+    <li class="next"><a href="https://rt416.github.io/publication/autodvt/">AutoDVT: Joint Real-Time Classification for Vein Compressibility Analysis in Deep Vein Thrombosis Ultrasound Diagnostics <span
+      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

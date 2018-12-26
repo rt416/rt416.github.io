@@ -39,11 +39,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://rt416.github.io/publication/deep-iqt/">
+  <link rel="canonical" href="https://rt416.github.io/publication/autodvt/">
 
   
 
-  <title> Deeper Image Quality Transfer: Training Low-Memory Neural Networks for 3D Images | Ryutaro Tanno</title>
+  <title>AutoDVT: Joint Real-Time Classification for Vein Compressibility Analysis in Deep Vein Thrombosis Ultrasound Diagnostics | Ryutaro Tanno</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -119,10 +119,10 @@
 
 
   <div class="container pub-title">
-    <h1 itemprop="name"> Deeper Image Quality Transfer: Training Low-Memory Neural Networks for 3D Images</h1>
+    <h1 itemprop="name">AutoDVT: Joint Real-Time Classification for Vein Compressibility Analysis in Deep Vein Thrombosis Ultrasound Diagnostics</h1>
     <span class="pub-authors" itemprop="author">
       
-      Stefano B. Blumberg, Ryutaro Tanno, Iasonas Kokkinos, Daniel C. Alexander
+      Ryutaro Tanno, Antonios Makropoulos, Salim Arslan, Ozan Oktay, Sven Mischkewitz, Fouad Al-Noor, Jonas Oppenheimer, Ramin Mandegaran, Bernhard Kainz, Mattias P. Heinrich
       
     </span>
     <span class="pull-right">
@@ -131,35 +131,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f"
+         href="https://twitter.com/intent/tweet?text=AutoDVT%3a%20Joint%20Real-Time%20Classification%20for%20Vein%20Compressibility%20Analysis%20in%20Deep%20Vein%20Thrombosis%20Ultrasound%20Diagnostics&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fautodvt%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frt416.github.io%2fpublication%2fautodvt%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f&amp;title=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frt416.github.io%2fpublication%2fautodvt%2f&amp;title=AutoDVT%3a%20Joint%20Real-Time%20Classification%20for%20Vein%20Compressibility%20Analysis%20in%20Deep%20Vein%20Thrombosis%20Ultrasound%20Diagnostics"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f&amp;title=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frt416.github.io%2fpublication%2fautodvt%2f&amp;title=AutoDVT%3a%20Joint%20Real-Time%20Classification%20for%20Vein%20Compressibility%20Analysis%20in%20Deep%20Vein%20Thrombosis%20Ultrasound%20Diagnostics"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=%20Deeper%20Image%20Quality%20Transfer%3a%20Training%20Low-Memory%20Neural%20Networks%20for%203D%20Images&amp;body=https%3a%2f%2frt416.github.io%2fpublication%2fdeep-iqt%2f">
+         href="mailto:?subject=AutoDVT%3a%20Joint%20Real-Time%20Classification%20for%20Vein%20Compressibility%20Analysis%20in%20Deep%20Vein%20Thrombosis%20Ultrasound%20Diagnostics&amp;body=https%3a%2f%2frt416.github.io%2fpublication%2fautodvt%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -178,7 +178,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">In this paper we address the memory demands that come with the processing of 3-dimensional, high-resolution, multi-channeled medical images in deep learning. We exploit memory-efficient backpropagation techniques, to reduce the memory complexity of network training from being linear in the network’s depth, to being roughly constant – permitting us to elongate deep architectures with negligible memory increase. We evaluate our methodology in the paradigm of Image Quality Transfer, whilst noting its potential application to various tasks that use deep learning. We study the impact of depth on accuracy and show that deeper models have more predictive power, which may exploit larger training sets. We obtain substantially better results than the previous state-of-the-art model with a slight memory increase, reducing the root-mean-squared-error by 13%. Our code is publicly available.</p>
+  <p class="pub-abstract" itemprop="text">We propose a dual-task convolutional neural network (CNN) to fully automate the real-time diagnosis of deep vein thrombosis (DVT). DVT can be reliably diagnosed through evaluation of vascular compressibility at anatomically defined landmarks in streams of ultrasound (US) images. The combined real-time evaluation of these tasks has never been achieved before. As proof-of-concept, we evaluate our approach on two selected landmarks of the femoral vein, which can be identified with high accuracy by our approach. Our CNN is able to identify if a vein fully compresses with a F1 score of more than 90% while applying manual pressure with the ultrasound probe. Fully compressible veins robustly rule out DVT and such patients do not need to be referred to further specialist examination. We have evaluated our method on 1150 5–10 s compression image sequences from 115 healthy volunteers, which results in a data set size of approximately 200k labelled images. Our method yields a theoretical inference frame rate of more than 500 fps and we thoroughly evaluate the performance of 15 possible configurations.</p>
 
   
   <div class="row">
@@ -238,21 +238,17 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://rt416.github.io/pdf/bloomsberg_miccai_2018.pdf">
+<a class="btn btn-primary btn-outline" href="https://rt416.github.io/pdf/tanno_miccai_2018.pdf">
   PDF
 </a>
 
 
 
 
-<a class="btn btn-primary btn-outline" href="https://github.com/sbb-gh/Deeper-Image-Quality-Transfer-Training-Low-Memory-Neural-Networks-for-3D-Images">
-  Code
-</a>
 
 
 
-
-<a class="btn btn-primary btn-outline" href="https://link.springer.com/chapter/10.1007/978-3-030-00928-1_14">
+<a class="btn btn-primary btn-outline" href="https://link.springer.com/chapter/10.1007%2F978-3-030-00934-2_100">
   Link
 </a>
 
@@ -275,10 +271,13 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://rt416.github.io/publication/autodvt/"><span
-      aria-hidden="true">&larr;</span> AutoDVT: Joint Real-Time Classification for Vein Compressibility Analysis in Deep Vein Thrombosis Ultrasound Diagnostics</a></li>
+    <li class="previous"><a href="https://rt416.github.io/publication/multitask-01/"><span
+      aria-hidden="true">&larr;</span> Uncertainty in multitask learning: joint representations for probabilistic MR-only radiotherapy planning</a></li>
     
 
+    
+    <li class="next"><a href="https://rt416.github.io/publication/deep-iqt/"> Deeper Image Quality Transfer: Training Low-Memory Neural Networks for 3D Images <span
+      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
