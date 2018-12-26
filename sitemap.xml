@@ -32,6 +32,15 @@
     
     <url>
     
+      <loc>https://rt416.github.io/preprints/ants/</loc>
+      <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://rt416.github.io/talk/ucl/</loc>
       <lastmod>2018-01-19T00:00:00+00:00</lastmod>
     </url>
@@ -134,6 +143,16 @@
     <url>
     
       <loc>https://rt416.github.io/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://rt416.github.io/preprints/</loc>
+      <lastmod>2018-09-18T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
