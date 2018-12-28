@@ -12,6 +12,16 @@
     
     <item>
       <title>なぜ不確実性をモデルする必要があるのか ~より安全なディープラーニングの医療画像解析応用に向けて</title>
+      <link>https://rt416.github.io/talk/tokyouni/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/tokyouni/</guid>
+      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.ut-radiology.umin.jp/ical/CIRCUS/about.html&#34; target=&#34;_blank&#34;&gt;CIRCUS team&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>なぜ不確実性をモデルする必要があるのか ~より安全なディープラーニングの医療画像解析応用に向けて</title>
       <link>https://rt416.github.io/talk/hiroshima/</link>
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
       
@@ -141,15 +151,6 @@
       <guid>https://rt416.github.io/talk/mit/</guid>
       <description>&lt;p&gt;Invited by &lt;a href=&#34;http://people.csail.mit.edu/ruizhi/&#34; target=&#34;_blank&#34;&gt;Ruizhi Liao&lt;/a&gt; and &lt;a href=&#34;http://people.csail.mit.edu/polina/&#34; target=&#34;_blank&#34;&gt;Prof. Pollina Golland&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title> Bayesian Image Quality Transfer with CNNs: Exploring Uncertainty in dMRI Super-Resolution</title>
-      <link>https://rt416.github.io/publication/biqt-rf/</link>
-      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/publication/biqt-rf/</guid>
-      <description></description>
     </item>
     
   </channel>
