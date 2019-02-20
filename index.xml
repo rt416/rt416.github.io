@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion</title>
+      <link>https://rt416.github.io/publication/trace/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/trace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>なぜ不確実性をモデルする必要があるのか ~より安全なディープラーニングの医療画像解析応用に向けて</title>
       <link>https://rt416.github.io/talk/tokyouni/</link>
       <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
@@ -140,16 +149,6 @@
       
       <guid>https://rt416.github.io/talk/nyu/</guid>
       <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.cims.nyu.edu/~cfgranda/&#34; target=&#34;_blank&#34;&gt;Dr. Carlos Fernandez-Granda&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exploring Uncertainty in dMRI Super-resolution via Probabilistic CNNs</title>
-      <link>https://rt416.github.io/talk/mit/</link>
-      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/mit/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://people.csail.mit.edu/ruizhi/&#34; target=&#34;_blank&#34;&gt;Ruizhi Liao&lt;/a&gt; and &lt;a href=&#34;http://people.csail.mit.edu/polina/&#34; target=&#34;_blank&#34;&gt;Prof. Pollina Golland&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
