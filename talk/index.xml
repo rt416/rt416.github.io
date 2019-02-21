@@ -11,6 +11,16 @@
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Neural Networks and Decision Trees</title>
+      <link>https://rt416.github.io/talk/mlmeetup/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/mlmeetup/</guid>
+      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://www.martingoodson.com/&#34; target=&#34;_blank&#34;&gt;Martin Goodson&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>なぜ不確実性をモデルする必要があるのか ~より安全なディープラーニングの医療画像解析応用に向けて</title>
       <link>https://rt416.github.io/talk/tokyouni/</link>
       <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>

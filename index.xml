@@ -11,6 +11,16 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Neural Networks and Decision Trees</title>
+      <link>https://rt416.github.io/talk/mlmeetup/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/mlmeetup/</guid>
+      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://www.martingoodson.com/&#34; target=&#34;_blank&#34;&gt;Martin Goodson&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion</title>
       <link>https://rt416.github.io/publication/trace/</link>
       <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
@@ -139,16 +149,6 @@
       
       <guid>https://rt416.github.io/talk/hms/</guid>
       <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.benoitscherrer.com/&#34; target=&#34;_blank&#34;&gt;Dr. Bernoit Scherrer&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exploring Uncertainty in dMRI Super-resolution via Probabilistic CNNs</title>
-      <link>https://rt416.github.io/talk/nyu/</link>
-      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/nyu/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.cims.nyu.edu/~cfgranda/&#34; target=&#34;_blank&#34;&gt;Dr. Carlos Fernandez-Granda&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
