@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title> Adaptive Neural Trees</title>
+      <link>https://rt416.github.io/publication/ants/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/ants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Neural Networks and Decision Trees</title>
       <link>https://rt416.github.io/talk/mlmeetup/</link>
       <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
@@ -57,15 +66,6 @@
       <guid>https://rt416.github.io/talk/ic/</guid>
       <description>&lt;p&gt;Invited by &lt;a href=&#34;https://scholar.google.co.uk/citations?user=QKCypSoAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Kai Arulkumaran&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title> Adaptive Neural Trees</title>
-      <link>https://rt416.github.io/publication/ants/</link>
-      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/publication/ants/</guid>
-      <description></description>
     </item>
     
     <item>

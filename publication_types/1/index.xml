@@ -7,8 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
-    <lastBuildDate>Sun, 10 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/publication_types/1/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title> Adaptive Neural Trees</title>
+      <link>https://rt416.github.io/publication/ants/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/ants/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion</title>
@@ -16,15 +25,6 @@
       <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/publication/trace/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Adaptive Neural Trees</title>
-      <link>https://rt416.github.io/publication/ants/</link>
-      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/publication/ants/</guid>
       <description></description>
     </item>
     
