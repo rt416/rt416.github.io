@@ -8,7 +8,18 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://rt416.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stochastic Filter Groups for Multi-Task CNNs: Learning Specialist and Generalist Convolution Kernels</title>
+      <link>https://rt416.github.io/publication/sfg/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/sfg/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title> Adaptive Neural Trees</title>

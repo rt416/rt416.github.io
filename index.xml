@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ryutaro Tanno on Ryutaro Tanno</title>
@@ -7,8 +6,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jul 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Stochastic Filter Groups for Multi-Task CNNs: Learning Specialist and Generalist Convolution Kernels</title>
+      <link>https://rt416.github.io/publication/sfg/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/sfg/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title> Adaptive Neural Trees</title>
@@ -140,16 +148,6 @@
       
       <guid>https://rt416.github.io/talk/msr/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Exploring Uncertainty in dMRI Super-resolution via Probabilistic CNNs</title>
-      <link>https://rt416.github.io/talk/hms/</link>
-      <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/hms/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.benoitscherrer.com/&#34; target=&#34;_blank&#34;&gt;Dr. Bernoit Scherrer&lt;/a&gt;&lt;/p&gt;
-</description>
     </item>
     
   </channel>

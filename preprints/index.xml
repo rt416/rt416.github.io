@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/preprints/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://rt416.github.io/preprints/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title> Adaptive Neural Trees</title>

@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://rt416.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Neural Networks and Decision Trees</title>
@@ -16,8 +18,7 @@
       <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/talk/mlmeetup/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://www.martingoodson.com/&#34; target=&#34;_blank&#34;&gt;Martin Goodson&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Invited by Martin Goodson</description>
     </item>
     
     <item>
@@ -26,8 +27,7 @@
       <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/talk/tokyouni/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.ut-radiology.umin.jp/ical/CIRCUS/about.html&#34; target=&#34;_blank&#34;&gt;CIRCUS team&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Invited by CIRCUS team</description>
     </item>
     
     <item>
@@ -36,8 +36,7 @@
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/talk/hiroshima/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://rsw.office.hiroshima-cu.ac.jp/Profiles/13/0001203/profile.html&#34; target=&#34;_blank&#34;&gt;Prof. Yoshitaka Masutani&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Invited by Prof. Yoshitaka Masutani</description>
     </item>
     
     <item>
@@ -46,8 +45,7 @@
       <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/talk/ic/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://scholar.google.co.uk/citations?user=QKCypSoAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Kai Arulkumaran&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Invited by Kai Arulkumaran</description>
     </item>
     
     <item>
@@ -56,8 +54,7 @@
       <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/talk/nyu_rad/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://cs.nyu.edu/~kgeras/&#34; target=&#34;_blank&#34;&gt;Prof. Krzysztof J. Geras&lt;/a&gt; and &lt;a href=&#34;https://nyulangone.org/doctors/1922064559/linda-moy&#34; target=&#34;_blank&#34;&gt;Prof. Linda Moy&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Invited by Prof. Krzysztof J. Geras and Prof. Linda Moy</description>
     </item>
     
     <item>
@@ -66,8 +63,7 @@
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/talk/nyu_02/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://scholar.google.co.uk/citations?user=0RAmmIAAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Prof. Kyunghyun Cho&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Invited by Prof. Kyunghyun Cho</description>
     </item>
     
     <item>
@@ -85,8 +81,7 @@
       <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/talk/hms/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.benoitscherrer.com/&#34; target=&#34;_blank&#34;&gt;Dr. Bernoit Scherrer&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Invited by Dr. Bernoit Scherrer</description>
     </item>
     
     <item>
@@ -95,8 +90,7 @@
       <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/talk/nyu/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.cims.nyu.edu/~cfgranda/&#34; target=&#34;_blank&#34;&gt;Dr. Carlos Fernandez-Granda&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Invited by Dr. Carlos Fernandez-Granda</description>
     </item>
     
     <item>
@@ -105,8 +99,7 @@
       <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/talk/mit/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://people.csail.mit.edu/ruizhi/&#34; target=&#34;_blank&#34;&gt;Ruizhi Liao&lt;/a&gt; and &lt;a href=&#34;http://people.csail.mit.edu/polina/&#34; target=&#34;_blank&#34;&gt;Prof. Pollina Golland&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Invited by Ruizhi Liao and Prof. Pollina Golland</description>
     </item>
     
   </channel>
