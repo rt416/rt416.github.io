@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Adaptive Neural Trees</title>
+      <link>https://rt416.github.io/talk/icml19/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/icml19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Neural Networks and Decision Trees</title>
       <link>https://rt416.github.io/talk/mlmeetup/</link>
       <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
@@ -100,6 +109,15 @@
       
       <guid>https://rt416.github.io/talk/mit/</guid>
       <description>Invited by Ruizhi Liao and Prof. Pollina Golland</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Image Quality Transfer with CNNs: Exploring Uncertainty in dMRI Super-Resolution</title>
+      <link>https://rt416.github.io/talk/miccai17/</link>
+      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/miccai17/</guid>
+      <description></description>
     </item>
     
   </channel>
