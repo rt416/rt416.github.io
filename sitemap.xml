@@ -61,6 +61,15 @@
     
     <url>
     
+      <loc>https://rt416.github.io/talk/microsoft/</loc>
+      <lastmod>2019-05-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://rt416.github.io/publication/ants/</loc>
       <lastmod>2019-04-20T00:00:00+00:00</lastmod>
     </url>
@@ -289,6 +298,14 @@
     
       <loc>https://rt416.github.io/categories/</loc>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://rt416.github.io/talk/pydata/</loc>
     </url>
     
   

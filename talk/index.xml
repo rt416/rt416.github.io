@@ -23,6 +23,15 @@
     
     <item>
       <title>Neural Networks and Decision Trees</title>
+      <link>https://rt416.github.io/talk/microsoft/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/microsoft/</guid>
+      <description>Invited by Nicola Cancedda</description>
+    </item>
+    
+    <item>
+      <title>Neural Networks and Decision Trees</title>
       <link>https://rt416.github.io/talk/mlmeetup/</link>
       <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -118,6 +127,15 @@
       
       <guid>https://rt416.github.io/talk/miccai17/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling human uncertainty: how to teach machines when experts disagree with each other</title>
+      <link>https://rt416.github.io/talk/pydata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/pydata/</guid>
+      <description>Invited by Ole Schulz-Trieglaff</description>
     </item>
     
   </channel>
