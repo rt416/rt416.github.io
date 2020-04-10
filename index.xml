@@ -6,8 +6,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
-    <lastBuildDate>Sun, 25 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Neural trees</title>
+      <link>https://rt416.github.io/patent/microsoft/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/patent/microsoft/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Modelling human uncertainty: how to teach machines when experts disagree with each other</title>
@@ -142,15 +151,6 @@
       <guid>https://rt416.github.io/talk/nyu_02/</guid>
       <description>&lt;p&gt;Invited by &lt;a href=&#34;https://scholar.google.co.uk/citations?user=0RAmmIAAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Prof. Kyunghyun Cho&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title> Deeper Image Quality Transfer: Training Low-Memory Neural Networks for 3D Images</title>
-      <link>https://rt416.github.io/publication/deep-iqt/</link>
-      <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/publication/deep-iqt/</guid>
-      <description></description>
     </item>
     
   </channel>
