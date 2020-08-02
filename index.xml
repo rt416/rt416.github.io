@@ -6,8 +6,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
-    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Disentangling Human Error from the Ground Truth in Segmentation of Medical Images</title>
+      <link>https://rt416.github.io/publication/neurips_humanerror/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/neurips_humanerror/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Foveation for Segmentation of Ultra-High Resolution Images</title>
+      <link>https://rt416.github.io/publication/neurips_foveation/</link>
+      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/neurips_foveation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncertainty Quantification in Deep Learning for Safer Neuroimage Enhancement</title>
+      <link>https://rt416.github.io/publication/neuroimage2019/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/neuroimage2019/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Neural trees</title>
@@ -34,15 +61,6 @@
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://rt416.github.io/publication/sfg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Uncertainty Quantification in Deep Learning for Safer Neuroimage Enhancement</title>
-      <link>https://rt416.github.io/publication/neuroimage2019/</link>
-      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/publication/neuroimage2019/</guid>
       <description></description>
     </item>
     
@@ -130,26 +148,6 @@
       
       <guid>https://rt416.github.io/talk/ic/</guid>
       <description>&lt;p&gt;Invited by &lt;a href=&#34;https://scholar.google.co.uk/citations?user=QKCypSoAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Kai Arulkumaran&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Learning from noisy data: how to teach machines when doctors disagree with each other</title>
-      <link>https://rt416.github.io/talk/nyu_rad/</link>
-      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/nyu_rad/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://cs.nyu.edu/~kgeras/&#34; target=&#34;_blank&#34;&gt;Prof. Krzysztof J. Geras&lt;/a&gt; and &lt;a href=&#34;https://nyulangone.org/doctors/1922064559/linda-moy&#34; target=&#34;_blank&#34;&gt;Prof. Linda Moy&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Combine Neural Networks and Decision Trees</title>
-      <link>https://rt416.github.io/talk/nyu_02/</link>
-      <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/nyu_02/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://scholar.google.co.uk/citations?user=0RAmmIAAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Prof. Kyunghyun Cho&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
