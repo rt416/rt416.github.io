@@ -13,6 +13,42 @@
     
     
     <item>
+      <title>Disentangling Human Error from the Ground Truth in Segmentation</title>
+      <link>https://rt416.github.io/talk/stanford/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/stanford/</guid>
+      <description>Invited by Julia Gong</description>
+    </item>
+    
+    <item>
+      <title>Modelling Uncertainty in Deep Learning for Safer Medical Image Processing</title>
+      <link>https://rt416.github.io/talk/tmu/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/tmu/</guid>
+      <description>Invited by Daniel Rueckert</description>
+    </item>
+    
+    <item>
+      <title>How To Teach Machines When Experts Disagree</title>
+      <link>https://rt416.github.io/talk/mit_2021/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/mit_2021/</guid>
+      <description>Invited by Adrian Dalca</description>
+    </item>
+    
+    <item>
+      <title>Modelling Uncertainty in Deep Learning for Safer Medical Image Processing</title>
+      <link>https://rt416.github.io/talk/miccai_cdmri/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/miccai_cdmri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Modelling human uncertainty: how to teach machines when experts disagree with each other</title>
       <link>https://rt416.github.io/talk/deepmind/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>

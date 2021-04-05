@@ -6,8 +6,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
-    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Disentangling Human Error from the Ground Truth in Segmentation</title>
+      <link>https://rt416.github.io/talk/stanford/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/stanford/</guid>
+      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://web.stanford.edu/~jxgong/&#34; target=&#34;_blank&#34;&gt;Julia Gong&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modelling Uncertainty in Deep Learning for Safer Medical Image Processing</title>
+      <link>https://rt416.github.io/talk/tmu/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/tmu/</guid>
+      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://scholar.google.com/citations?user=H0O0WnQAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Daniel Rueckert&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How To Teach Machines When Experts Disagree</title>
+      <link>https://rt416.github.io/talk/mit_2021/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/mit_2021/</guid>
+      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.mit.edu/~adalca/&#34; target=&#34;_blank&#34;&gt;Adrian Dalca&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modelling Uncertainty in Deep Learning for Safer Medical Image Processing</title>
+      <link>https://rt416.github.io/talk/miccai_cdmri/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/talk/miccai_cdmri/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Disentangling Human Error from the Ground Truth in Segmentation of Medical Images</title>
@@ -109,45 +148,6 @@
       
       <guid>https://rt416.github.io/talk/mlmeetup/</guid>
       <description>&lt;p&gt;Invited by &lt;a href=&#34;https://www.martingoodson.com/&#34; target=&#34;_blank&#34;&gt;Martin Goodson&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Learning From Noisy Labels By Regularized Estimation Of Annotator Confusion</title>
-      <link>https://rt416.github.io/publication/trace/</link>
-      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/publication/trace/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>なぜ不確実性をモデルする必要があるのか ~より安全なディープラーニングの医療画像解析応用に向けて</title>
-      <link>https://rt416.github.io/talk/tokyouni/</link>
-      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/tokyouni/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://www.ut-radiology.umin.jp/ical/CIRCUS/about.html&#34; target=&#34;_blank&#34;&gt;CIRCUS team&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>なぜ不確実性をモデルする必要があるのか ~より安全なディープラーニングの医療画像解析応用に向けて</title>
-      <link>https://rt416.github.io/talk/hiroshima/</link>
-      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/hiroshima/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;http://rsw.office.hiroshima-cu.ac.jp/Profiles/13/0001203/profile.html&#34; target=&#34;_blank&#34;&gt;Prof. Yoshitaka Masutani&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to Combine Neural Networks and Decision Trees</title>
-      <link>https://rt416.github.io/talk/ic/</link>
-      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/ic/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://scholar.google.co.uk/citations?user=QKCypSoAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Kai Arulkumaran&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
