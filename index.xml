@@ -6,8 +6,44 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ryutaro Tanno</copyright>
-    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Repairing Neural Networks by Leaving the Right Past Behind</title>
+      <link>https://rt416.github.io/publication/icml_modelrepair/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/icml_modelrepair/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to Downsample for Segmentation of Ultra-High Resolution Images</title>
+      <link>https://rt416.github.io/publication/iclr_deformation/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/iclr_deformation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Principled Approach to Failure Analysis and Model Repairment: Demonstration in Medical Imaging</title>
+      <link>https://rt416.github.io/publication/miccai_failureanalysis/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/miccai_failureanalysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Active Label Cleaning for Improved Dataset Quality under Resource Constraints</title>
+      <link>https://rt416.github.io/publication/labelclean_naturecomm/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/labelclean_naturecomm/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Disentangling Human Error from the Ground Truth in Segmentation</title>
@@ -110,44 +146,6 @@
       
       <guid>https://rt416.github.io/talk/pydata/</guid>
       <description>&lt;p&gt;Invited by &lt;a href=&#34;https://uk.linkedin.com/in/oschulztrieglaff&#34; target=&#34;_blank&#34;&gt;Ole Schulz-Trieglaff&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Adaptive Neural Trees</title>
-      <link>https://rt416.github.io/talk/icml19/</link>
-      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/icml19/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Neural Networks and Decision Trees</title>
-      <link>https://rt416.github.io/talk/microsoft/</link>
-      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/microsoft/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://uk.linkedin.com/in/nicola-cancedda-a085261&#34; target=&#34;_blank&#34;&gt;Nicola Cancedda&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title> Adaptive Neural Trees</title>
-      <link>https://rt416.github.io/publication/ants/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/publication/ants/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Neural Networks and Decision Trees</title>
-      <link>https://rt416.github.io/talk/mlmeetup/</link>
-      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://rt416.github.io/talk/mlmeetup/</guid>
-      <description>&lt;p&gt;Invited by &lt;a href=&#34;https://www.martingoodson.com/&#34; target=&#34;_blank&#34;&gt;Martin Goodson&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

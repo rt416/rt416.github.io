@@ -13,6 +13,42 @@
     
     
     <item>
+      <title>Repairing Neural Networks by Leaving the Right Past Behind</title>
+      <link>https://rt416.github.io/publication/icml_modelrepair/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/icml_modelrepair/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to Downsample for Segmentation of Ultra-High Resolution Images</title>
+      <link>https://rt416.github.io/publication/iclr_deformation/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/iclr_deformation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Principled Approach to Failure Analysis and Model Repairment: Demonstration in Medical Imaging</title>
+      <link>https://rt416.github.io/publication/miccai_failureanalysis/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/miccai_failureanalysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Active Label Cleaning for Improved Dataset Quality under Resource Constraints</title>
+      <link>https://rt416.github.io/publication/labelclean_naturecomm/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rt416.github.io/publication/labelclean_naturecomm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Disentangling Human Error from the Ground Truth in Segmentation of Medical Images</title>
       <link>https://rt416.github.io/publication/neurips_humanerror/</link>
       <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>

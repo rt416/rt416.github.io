@@ -4,8 +4,28 @@
     
     <url>
     
-      <loc>https://rt416.github.io/talk/stanford/</loc>
-      <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+      <loc>https://rt416.github.io/publication_types/1/</loc>
+      <lastmod>2022-04-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://rt416.github.io/publication_types/</loc>
+      <lastmod>2022-04-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://rt416.github.io/publication/icml_modelrepair/</loc>
+      <lastmod>2022-04-11T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -14,8 +34,44 @@
     <url>
     
       <loc>https://rt416.github.io/</loc>
-      <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+      <lastmod>2022-04-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://rt416.github.io/publication/iclr_deformation/</loc>
+      <lastmod>2022-02-11T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://rt416.github.io/publication/miccai_failureanalysis/</loc>
+      <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://rt416.github.io/publication/labelclean_naturecomm/</loc>
+      <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://rt416.github.io/talk/stanford/</loc>
+      <lastmod>2021-04-21T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -50,28 +106,8 @@
     
     <url>
     
-      <loc>https://rt416.github.io/publication_types/1/</loc>
-      <lastmod>2020-07-30T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://rt416.github.io/publication/neurips_humanerror/</loc>
       <lastmod>2020-07-30T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://rt416.github.io/publication_types/</loc>
-      <lastmod>2020-07-30T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
