@@ -8,7 +8,7 @@
   photo: "img/talks/ai4science-2026.webp"
   photo_alt: "Speakers and attendees at the AI for Science European Summer School in Athens"
 - id: "oxml-2024"
-  title: "GenAI for Healthcare: Progress and Challenges Ahead"
+  title: "LLMs for Healthcare: Progress and Challenges Ahead"
   date: "2024-07"
   event: "Keynote, Oxford Machine Learning Summer School (OxML)"
   location: "Oxford, UK"

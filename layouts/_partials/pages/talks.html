@@ -2,7 +2,7 @@
 {{ $writing := hugo.Data.writing | default slice }}
 {{ $essay := cond $launched hugo.Data.launch.essay nil }}
 <article>
-  <h1 class="page-h">Talks &amp; Blogs</h1>
+  <h1 class="page-h">Talks</h1>
 
   {{ if or $writing $essay }}
   <section class="sec" id="blogs" aria-labelledby="blogs-h">

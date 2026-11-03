@@ -3,7 +3,7 @@
   <nav aria-label="Primary">
     <ul>
       {{- $here := .RelPermalink }}
-      {{- range slice (dict "t" "Research" "u" "/research/") (dict "t" "Talks & Blogs" "u" "/talks/") }}
+      {{- range slice (dict "t" "Research" "u" "/research/") (dict "t" "Talks" "u" "/talks/") }}
       <li><a href="{{ .u }}"{{ if eq $here .u }} aria-current="page"{{ end }}>{{ .t }}</a></li>
       {{- end }}
     </ul>

@@ -1,4 +1,4 @@
 ---
-title: "Talks & Blogs"
+title: "Talks"
 template: "talks"
 ---
