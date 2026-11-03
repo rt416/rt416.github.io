@@ -114,6 +114,7 @@
     - label: "PDF"
       url: "https://arxiv.org/pdf/2608.09861"
   selected:
+    venue: "arXiv 2026"
     image: "img/research/amie-video-consultations-2026.jpg"
 - id: "amie-disease-management-nature-2026"
   title: "Towards conversational artificial intelligence for disease management"
@@ -357,6 +358,7 @@
     - label: "PDF"
       url: "https://arxiv.org/pdf/2602.08948"
   selected:
+    venue: "arXiv 2026"
     image: "img/research/corefine-2026.jpg"
 - id: "amie-cardiology-natmed-2026"
   title: "A large language model for complex cardiology care"
@@ -450,6 +452,7 @@
     - label: "PDF"
       url: "https://arxiv.org/pdf/2510.22414"
   selected:
+    venue: "arXiv 2025"
     image: "img/research/amie-ophthalmology-2025.jpg"
 - id: "amie-oncology-nejmai-2025"
   title: "Exploring Large Language Models for Specialist-Level Oncology Care"
@@ -746,6 +749,7 @@
     - label: "PDF"
       url: "https://arxiv.org/pdf/2405.03162"
   selected:
+    venue: "arXiv 2024"
     image: "img/research/med-gemini-multimodal-2024.jpg"
 - id: "mcpl-icml-2024"
   title: "An Image is Worth Multiple Words: Discovering Object Level Concepts using Multi-Concept Prompt Learning"
@@ -898,6 +902,7 @@
     - label: "arXiv"
       url: "https://arxiv.org/abs/2307.14334"
   selected:
+    venue: "NEJM AI 2024"
     image: "img/research/med-palm-m-nejmai-2024.jpg"
 - id: "generative-fairness-natmed-2024"
   title: "Generative models improve fairness of medical classifiers under distribution shifts"
@@ -952,6 +957,7 @@
     - label: "Paper"
       url: "https://doi.org/10.1371/journal.pone.0272685"
   selected:
+    venue: "PLOS ONE 2023"
     image: "img/research/icbt-outcomes-plosone-2023.jpg"
 - id: "low-field-mri-iqt-media-2023"
   title: "Low-field magnetic resonance image enhancement via stochastic image quality transfer"
@@ -980,6 +986,7 @@
     - label: "Code"
       url: "https://github.com/hongxiangharry/Stochastic-IQT"
   selected:
+    venue: "Medical Image Analysis 2023"
     image: "img/research/low-field-mri-iqt-media-2023.jpg"
 - id: "multiple-annotators-segmentation-pr-2023"
   title: "Learning from multiple annotators for medical image segmentation"
@@ -1003,6 +1010,7 @@
     - label: "Paper"
       url: "https://doi.org/10.1016/j.patcog.2023.109400"
   selected:
+    venue: "Pattern Recognition 2023"
     image: "img/research/multiple-annotators-segmentation-pr-2023.jpg"
 - id: "icml_modelrepair"
   legacy_slug: "icml_modelrepair"

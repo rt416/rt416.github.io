@@ -1,7 +1,7 @@
-{{/* A Selected Work project's papers as short links with venues. Pass the list of papers. */}}
+{{/* A Selected Work project's papers as short links with venues; a paper without a label links its venue. Pass the list of papers. */}}
 <ul class="project__papers">
-  {{ range . }}
+  {{ range $p := . }}
   {{ $url := .url }}{{ if not $url }}{{ $url = (index (index (where hugo.Data.publications "id" .pub) 0).links 0).url }}{{ end }}
-  <li><a href="{{ $url }}">{{ .label }}</a> <span class="v">{{ .venue }}</span></li>
+  <li>{{ with .label }}<a href="{{ $url }}">{{ . }}</a> <span class="v">{{ $p.venue }}</span>{{ else }}<a href="{{ $url }}">{{ .venue }}</a>{{ end }}</li>
   {{ end }}
 </ul>

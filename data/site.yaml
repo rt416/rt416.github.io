@@ -1,6 +1,6 @@
 # Name, positioning and contact links (pre-launch wording). Launch wording lives in data/launch.yaml.
 name: "Ryutaro Tanno"
-description: "Ryutaro Tanno builds AI for medicine and science. Previously Staff Research Scientist at Google DeepMind."
+description: "Ryutaro Tanno builds AI systems for healthcare and biomedical science. Previously Staff Research Scientist at Google DeepMind."
 title: "Previously Staff Research Scientist at Google DeepMind"
 locations: "London"
 # Home page introduction. 'intro' is the opening paragraph before launch (at launch, data/launch.yaml 'mission' replaces it);

@@ -7,6 +7,7 @@
   <section class="sec" id="pubs" aria-labelledby="pubs-h">
     <h2 id="pubs-h">Publications</h2>
     {{ $years := slice }}{{ range $pubs }}{{ $years = $years | append .year }}{{ end }}
+    <nav aria-label="Jump to year"><ul class="years">{{ range uniq $years }}<li><a href="#y{{ . }}">{{ . }}</a></li>{{ end }}</ul></nav>
     {{ range uniq $years }}
     {{ $y := . }}
     <h3 class="year" id="y{{ $y }}">{{ $y }}</h3>

@@ -1,5 +1,6 @@
 # Selected work on the home page: themes, then one row per project with its key papers.
 # Each paper links to 'pub' (an id in publications.yaml) unless 'url' is given; 'label' and 'venue' are the short forms shown.
+# Leave out 'label' and the venue itself becomes the link.
 # 'demos' adds a 'Demos:' row of play buttons linking to videos.
 # A project with many papers can use 'groups' (each with a 'label' and its own 'papers') instead of 'papers'.
 # 'art' names the small illustration beside a project (assets/art/<art>.svg). Without it, the figure from
@@ -43,12 +44,12 @@
       art: "coscientist"
       summary: "A multi-agent system that generates, critiques and refines scientific hypotheses."
       papers:
-        - { label: "Paper", pub: "co-scientist-nature-2026", venue: "Nature 2026" }
+        - { pub: "co-scientist-nature-2026", venue: "Nature 2026" }
     - name: "Flamingo-CXR"
       art: "flamingo"
       summary: "Expert-level specialised VLM post-trained for radiology report generation. Clinician–AI collaboration led to the best results."
       papers:
-        - { label: "Paper", pub: "flamingo-cxr-natmed-2025", venue: "Nature Medicine 2025" }
+        - { pub: "flamingo-cxr-natmed-2025", venue: "Nature Medicine 2025" }
 
 - title: "Reliable AI: Robustness, Fairness & Uncertainty"
   projects:
@@ -56,7 +57,7 @@
       art: "fairness"
       summary: "Generative models that make medical classifiers fairer under distribution shift."
       papers:
-        - { label: "Paper", pub: "generative-fairness-natmed-2024", venue: "Nature Medicine 2024" }
+        - { pub: "generative-fairness-natmed-2024", venue: "Nature Medicine 2024" }
     - name: "Learning from Noisy and Biased Labels"
       art: "labels"
       summary: "Separating annotators’ errors from the truth, and choosing which labels to clean."
@@ -89,12 +90,12 @@
       art: "ants"
       summary: "Marrying neural networks and decision trees to get the best of both worlds."
       papers:
-        - { label: "Paper", pub: "ants", venue: "ICML 2019 · Oral" }
+        - { pub: "ants", venue: "ICML 2019 · Oral" }
     - name: "Stochastic Filter Groups"
       art: "sfg"
       summary: "Multi-task networks that learn which convolution kernels to share across tasks and which to specialise."
       papers:
-        - { label: "Paper", pub: "sfg", venue: "ICCV 2019 · Oral" }
+        - { pub: "sfg", venue: "ICCV 2019 · Oral" }
     - name: "Learning Where to Look"
       art: "look"
       summary: "Learning where to sample ultra-high-resolution images before segmenting them, keeping detail where it matters."
