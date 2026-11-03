@@ -19,7 +19,7 @@
 
   <section class="sec" id="talks" aria-labelledby="talks-h">
     <h2 id="talks-h">Past Talks</h2>
-    <p class="invite">A selection of talks; I’ve given many more over the years than are listed here.</p>
+    <p class="invite">A selection of talks.</p>
     <ul class="dated">
       {{ range $t := hugo.Data.talks }}
       <li id="{{ .id }}"><time datetime="{{ .date }}">{{ if eq (len .date) 7 }}{{ partial "month.html" .date }}{{ else }}{{ dateFormat "2 Jan 2006" .date }}{{ end }}</time>
