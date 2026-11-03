@@ -8,6 +8,8 @@ disableKinds = ["taxonomy", "term", "rss", "section"]
   # The one launch switch. false: pre-launch site (no current employer, no launch content).
   # true: launch site, which also needs data/launch.yaml (kept out of the repo until launch day).
   launch = false
+  # Show the News section on the home page (data/news.yaml).
+  show_news = false
 
 [sitemap]
   changeFreq = "monthly"

@@ -14,12 +14,14 @@
     {{ range $S.past }}<p>{{ . | markdownify }}</p>{{ end }}
   </section>
 
+  {{ if site.Params.show_news }}
   {{ $news := partial "news-items.html" . }}
   <section class="sec" id="news" aria-labelledby="news-h">
     <h2 id="news-h">News</h2>
     {{ partial "news-list.html" (first 5 $news) }}
     {{ if gt (len $news) 5 }}<details class="earlier"><summary>Earlier news</summary>{{ partial "news-list.html" (after 5 $news) }}</details>{{ end }}
   </section>
+  {{ end }}
 
   <section class="sec" id="work" aria-labelledby="work-h">
     <h2 id="work-h">Selected Work</h2>
