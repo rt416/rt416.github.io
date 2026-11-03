@@ -44,12 +44,12 @@
         {{ else }}
         {{ partial "project-papers.html" .papers }}
         {{ end }}
+        </div>
         {{ with .demos }}
-        <div class="demos"><span class="demos__label">Watch the demos:</span>
-          {{ range . }}<a class="demo" href="{{ .url }}"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2.5 1.5v7l6-3.5z"/></svg>{{ .label }}</a>{{ end }}
+        <div class="demos"><span class="demos__label">Demos:</span>
+          <span class="demos__list">{{ range . }}<a class="demo" href="{{ .url }}"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2.5 1.5v7l6-3.5z"/></svg>{{ .label }}</a>{{ end }}</span>
         </div>
         {{ end }}
-        </div>
       </li>
       {{ end }}
     </ul>
