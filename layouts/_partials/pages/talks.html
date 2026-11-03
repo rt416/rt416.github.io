@@ -3,6 +3,7 @@
 {{ $essay := cond $launched hugo.Data.launch.essay nil }}
 <article>
   <h1 class="page-h">Talks</h1>
+  <p class="invite">For invitations, write to {{ partial "email.html" . }}.</p>
 
   {{ if or $writing $essay }}
   <section class="sec" id="blogs" aria-labelledby="blogs-h">
@@ -18,7 +19,7 @@
 
   <section class="sec" id="talks" aria-labelledby="talks-h">
     <h2 id="talks-h">Past Talks</h2>
-    <p class="invite">A selection of talks; I’ve given many more over the years than are listed here. For invitations, write to {{ partial "email.html" . }}.</p>
+    <p class="invite">A selection of talks; I’ve given many more over the years than are listed here.</p>
     <ul class="dated">
       {{ range $t := hugo.Data.talks }}
       <li id="{{ .id }}"><time datetime="{{ .date }}">{{ if eq (len .date) 7 }}{{ partial "month.html" .date }}{{ else }}{{ dateFormat "2 Jan 2006" .date }}{{ end }}</time>
