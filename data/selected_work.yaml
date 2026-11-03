@@ -7,12 +7,12 @@
 # 'art' names the small illustration beside a project (assets/art/<art>.svg). Without it, the figure from
 # the project's first paper is used; set 'figure' to another pub id to change that.
 - title: "LLMs & Agents for Medicine and Science"
-  title_ja: "医療と科学のためのLLMとエージェント"
+  title_ja: "医療と科学のためのLLM・エージェント"
   projects:
     - name: "AMIE"
       art: "amie"
       summary: "Conversational diagnostic AI, from simulated consultations to a prospective study in primary care."
-      summary_ja: "対話型診断AI。シミュレーションによる診察から、プライマリケアでの前向き研究まで。"
+      summary_ja: "対話を通じて診断を行うAI。シミュレーションでの診察から、プライマリケアでの前向き研究まで。"
       groups:
         - label: "Diagnosis & management"
           label_ja: "診断と治療管理"
@@ -23,41 +23,41 @@
         - label: "Specialist care"
           label_ja: "専門医療"
           papers:
-            - { label: "Cardiology", label_ja: "循環器", pub: "amie-cardiology-natmed-2026", venue: "Nature Medicine 2026" }
-            - { label: "Oncology", label_ja: "腫瘍", pub: "amie-oncology-nejmai-2025", venue: "NEJM AI 2025" }
+            - { label: "Cardiology", label_ja: "循環器内科", pub: "amie-cardiology-natmed-2026", venue: "Nature Medicine 2026" }
+            - { label: "Oncology", label_ja: "腫瘍内科", pub: "amie-oncology-nejmai-2025", venue: "NEJM AI 2025" }
         - label: "Safety & deployment"
-          label_ja: "安全性と実装"
+          label_ja: "安全性と実臨床への展開"
           papers:
-            - { label: "Safety guardrails + expert oversight", label_ja: "安全ガードレール＋専門家による監督", pub: "g-amie-oversight-2025", venue: "arXiv 2025" }
+            - { label: "Safety guardrails + expert oversight", label_ja: "安全ガードレールと専門家による監督", pub: "g-amie-oversight-2025", venue: "arXiv 2025" }
             - { label: "Prospective validation in primary care", label_ja: "プライマリケアでの前向き検証", pub: "amie-primary-care-lancet-2026", venue: "The Lancet 2026" }
     - name: "Gemini & Med-Gemini"
       art: "gemini"
       figure: "med-gemini-capabilities-2024"
       summary: "Gemini models and their specialisation for medicine, from clinical text to medical imaging modalities and genomics."
-      summary_ja: "Gemini モデルと、その医療への特化。臨床テキストから各種の医用画像、ゲノミクスまで。"
+      summary_ja: "Gemini と、それを医療向けに特化させた Med-Gemini。臨床テキストから医用画像、ゲノミクスまで幅広く扱います。"
       papers:
         - { label: "Gemini 2.5", pub: "gemini-2-5-2025", url: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/", venue: "Google blog 2025" }
         - { label: "Med-Gemini", pub: "med-gemini-capabilities-2024", venue: "arXiv 2024" }
     - name: "AI Co-Clinician"
       art: "coclinician"
       summary: "A research initiative on triadic care, in which AI works alongside both patients and physicians. One key ingredient is a real-time agent that sees, hears and speaks with patients over live video."
-      summary_ja: "AIが患者と医師の双方とともに働く「三者間ケア」の研究イニシアチブ。その重要な要素の一つが、ライブ映像を通じて患者を見て、聞き、話すリアルタイムのエージェントです。"
+      summary_ja: "患者・医師・AIの三者でつくる新しいケアのかたち（triadic care）を探る研究イニシアチブ。その柱の一つが、ライブ映像越しに患者を見て、聞き、話すことができるリアルタイムのエージェントです。"
       papers:
         - { label: "Medical AI with eyes, ears and a voice", pub: "ai-co-clinician-eyes-ears-voice-2026", venue: "arXiv 2026" }
       demos:
         - { label: "Abdominal pain", label_ja: "腹痛", url: "https://www.youtube.com/watch?v=y5Vaa_SN1t0" }
-        - { label: "Drooping eyelid", label_ja: "まぶたの下垂", url: "https://www.youtube.com/watch?v=dC4icb75vLQ" }
+        - { label: "Drooping eyelid", label_ja: "まぶたの垂れ下がり", url: "https://www.youtube.com/watch?v=dC4icb75vLQ" }
         - { label: "Shoulder pain", label_ja: "肩の痛み", url: "https://www.youtube.com/watch?v=E7iEvWo-E6c" }
     - name: "AI Co-Scientist"
       art: "coscientist"
       summary: "A multi-agent system that generates, critiques and refines scientific hypotheses."
-      summary_ja: "科学的仮説を生成し、批評し、洗練させるマルチエージェントシステム。"
+      summary_ja: "科学的な仮説を生み出し、批判的に検討し、磨き上げていくマルチエージェントシステム。"
       papers:
         - { pub: "co-scientist-nature-2026", venue: "Nature 2026" }
     - name: "Flamingo-CXR"
       art: "flamingo"
       summary: "Expert-level specialised VLM post-trained for radiology report generation. Clinician–AI collaboration led to the best results."
-      summary_ja: "放射線科レポート生成のために事後学習した、専門家レベルの特化型VLM。臨床医とAIの協働で最良の結果が得られました。"
+      summary_ja: "放射線科レポートの作成に特化して事後学習した、専門家レベルの視覚言語モデル（VLM）。臨床医とAIが協働したときに最も良い結果が得られました。"
       papers:
         - { pub: "flamingo-cxr-natmed-2025", venue: "Nature Medicine 2025" }
 
@@ -68,14 +68,14 @@
       name_ja: "ロバスト性と公平性"
       art: "fairness"
       summary: "Generative models that make medical classifiers fairer under distribution shift."
-      summary_ja: "分布シフトのもとで、医療分類器をより公平にする生成モデル。"
+      summary_ja: "生成モデルを活用し、分布シフトのもとでも医療用の分類器をより公平にする。"
       papers:
         - { pub: "generative-fairness-natmed-2024", venue: "Nature Medicine 2024" }
     - name: "Learning from Noisy and Biased Labels"
-      name_ja: "ノイズやバイアスを含むラベルからの学習"
+      name_ja: "ノイズやバイアスのあるラベルからの学習"
       art: "labels"
       summary: "Separating annotators’ errors from the truth, and choosing which labels to clean."
-      summary_ja: "アノテーターの誤りと真のラベルを切り分け、どのラベルを修正すべきかを選ぶ。"
+      summary_ja: "アノテーターの誤りと真のラベルを切り分け、どのラベルから修正すべきかを見極める。"
       papers:
         - { label: "Annotator confusion", label_ja: "アノテーターの混同", pub: "trace", venue: "CVPR 2019" }
         - { label: "Human error in segmentation", label_ja: "セグメンテーションにおける人的誤り", pub: "neurips_humanerror", venue: "NeurIPS 2020" }
@@ -84,14 +84,14 @@
       name_ja: "能動学習"
       art: "active"
       summary: "Use a small proxy model to inform which data and in what order a large model should learn from to improve sample-efficiency and performance."
-      summary_ja: "小さな代理モデルを使って、大きなモデルがどのデータをどの順序で学ぶべきかを導き、サンプル効率と性能を高める。"
+      summary_ja: "小さな代理モデルを手がかりに、大きなモデルが「どのデータを、どの順番で」学ぶべきかを決め、サンプル効率と性能を高める。"
       papers:
         - { label: "Bad students make great teachers", pub: "bad-students-eccv-2024", venue: "ECCV 2024" }
     - name: "Model Repair"
       name_ja: "モデルの修復"
       art: "repair"
       summary: "Finding why a model fails in deployment and repairing it."
-      summary_ja: "実運用でモデルが失敗する原因を突き止め、修復する。"
+      summary_ja: "実運用でモデルがなぜ失敗するのかを突き止め、修復する。"
       papers:
         - { label: "Failure analysis", label_ja: "失敗の分析", pub: "miccai_failureanalysis", venue: "MICCAI 2021" }
         - { label: "Continual un-learning for model repair", label_ja: "継続的アンラーニングによるモデル修復", pub: "icml_modelrepair", venue: "NeurIPS 2022" }
@@ -99,10 +99,10 @@
       name_ja: "不確実性の定量化"
       art: "uncertainty"
       summary: "Deep learning that estimates different types of uncertainty, to gauge the risk of failure and explain its causes."
-      summary_ja: "さまざまな種類の不確実性を推定する深層学習により、失敗のリスクを見積もり、その原因を説明する。"
+      summary_ja: "さまざまな種類の不確実性を推定できる深層学習。失敗のリスクを見積もり、その原因の説明につなげる。"
       papers:
-        - { label: "Bayesian image quality transfer", label_ja: "ベイズ画像品質転送", pub: "biqt-rf", venue: "MICCAI 2017 (Young Scientist Award)", venue_ja: "MICCAI 2017（Young Scientist Award）" }
-        - { label: "Safer neuroimage enhancement", label_ja: "より安全な神経画像の高画質化", pub: "neuroimage2019", venue: "NeuroImage 2020" }
+        - { label: "Bayesian image quality transfer", label_ja: "ベイズ的画像品質転送", pub: "biqt-rf", venue: "MICCAI 2017 (Young Scientist Award)", venue_ja: "MICCAI 2017（Young Scientist Award）" }
+        - { label: "Safer neuroimage enhancement", label_ja: "より安全な脳画像の高画質化", pub: "neuroimage2019", venue: "NeuroImage 2020" }
         - { label: "Uncertainty in medical image synthesis", label_ja: "医用画像合成における不確実性", pub: "imgsynthesis_chapter", venue: "Book chapter 2022", venue_ja: "書籍（分担執筆）2022" }
 
 - title: "Architectures & Representation Learning"
@@ -111,28 +111,28 @@
     - name: "Adaptive Neural Trees"
       art: "ants"
       summary: "Marrying neural networks and decision trees to get the best of both worlds."
-      summary_ja: "ニューラルネットワークと決定木を組み合わせ、両者の長所を生かす。"
+      summary_ja: "ニューラルネットワークと決定木を融合し、両者の長所を兼ね備える。"
       papers:
         - { pub: "ants", venue: "ICML 2019 · Oral" }
     - name: "Stochastic Filter Groups"
       art: "sfg"
       summary: "Multi-task networks that learn which convolution kernels to share across tasks and which to specialise."
-      summary_ja: "タスク間でどの畳み込みカーネルを共有し、どれを特化させるかを学習するマルチタスクネットワーク。"
+      summary_ja: "タスク間で共有する畳み込みカーネルと、各タスクに特化させるカーネルを自ら学習するマルチタスクネットワーク。"
       papers:
         - { pub: "sfg", venue: "ICCV 2019 · Oral" }
     - name: "Learning Where to Look"
-      name_ja: "どこを見るかの学習"
+      name_ja: "どこを見るかを学ぶ"
       art: "look"
       summary: "Learning where to sample ultra-high-resolution images before segmenting them, keeping detail where it matters."
-      summary_ja: "超高解像度画像をセグメンテーションする前に、どこをサンプリングするかを学習し、重要な部分の細部を保つ。"
+      summary_ja: "超高解像度画像をセグメンテーションする前に「どこを細かく見るか」を学習し、重要な部分のディテールを保つ。"
       papers:
         - { label: "Foveation", pub: "neurips_foveation", venue: "MICCAI 2020" }
         - { label: "Learning to downsample", label_ja: "ダウンサンプリングの学習", pub: "iclr_deformation", venue: "ICLR 2022" }
     - name: "Learning Better Vision–Language Alignment"
-      name_ja: "視覚と言語のより良いアライメントの学習"
+      name_ja: "視覚と言語のアライメント改善"
       art: "vlalign"
       summary: "Learning object-level concepts from images and text, and aligning vision–language models with diffusion models."
-      summary_ja: "画像とテキストから物体レベルの概念を学習し、視覚言語モデルを拡散モデルと整合させる。"
+      summary_ja: "画像とテキストから物体レベルの概念を学び、視覚言語モデルと拡散モデルの整合を図る。"
       papers:
         - { label: "Multi-concept prompt learning", label_ja: "複数概念のプロンプト学習", pub: "mcpl-icml-2024", venue: "ICML 2024" }
         - { label: "Diffusion instruction tuning", label_ja: "拡散モデルによるインストラクションチューニング", pub: "lavender-diffusion-instruction-tuning-icml-2025", venue: "ICML 2025" }
