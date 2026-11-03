@@ -3,7 +3,7 @@
 # Paper titles, venues and links stay in English. Keep this in step with site.yaml when the English changes.
 name: "丹野 龍太郎"
 description: "丹野龍太郎。医療・生命科学のためのAIシステムをつくっています。元 Google DeepMind Staff Research Scientist。"
-intro: "こんにちは、丹野龍太郎です。この10年間、医療・生命科学の分野でAIシステムをつくってきました。いちばん情熱を注いでいるのは、専門家の力を引き出し、その仕事を長く続き、広く届き、そして楽しいものへと変えていくAIです。"
+intro: "Hi 丹野龍太郎です。今現在、一番情熱を注いでいるのは、専門家の力を引き出し、その仕事を長く続き、広く届き、そして楽しいものへと変えていくAIです。"
 past:
   - "Google DeepMind では最近まで Staff Research Scientist として、医療向けLLMシステムの基礎研究から実社会での展開までに取り組んできました。直近では、医療の届け方そのものを捉え直す Google DeepMind の新しい取り組み、[AI co-clinician](https://x.com/GoogleDeepMind/status/2049867061279457761) の研究をリードしました。"
   - "それ以前は、[Med-Gemini](https://arxiv.org/pdf/2404.18416) でマルチモーダル領域を共同でリードし、Google の対話型診断AIの研究プログラム [AMIE](https://www.nature.com/articles/s41591-026-04371-0) では共同テクニカルリードを務めました。AMIE では、テキストのみで行った最初の診断研究から、マルチモーダルな診察、専門医療、疾患管理、そしてプライマリケアでの前向き研究へと、チームとともに研究を広げてきました。さらに遡ると、放射線科のレポート作成で人とAIの協働を初めて示した [Flamingo-CXR](https://www.nature.com/articles/s41591-024-03302-1) を主導しました。"
