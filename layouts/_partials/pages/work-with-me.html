@@ -1,0 +1,20 @@
+{{ $W := hugo.Data.launch.work_with_me }}
+<article>
+  <h1 class="page-h">Work with me</h1>
+  <section class="prose" aria-label="Why now">
+    {{ with $W.why_now }}<p>{{ . }}</p>{{ else }}{{ partial "todo.html" "approved 'why now' wording" }}{{ end }}
+  </section>
+  <section class="sec" id="problems" aria-labelledby="problems-h">
+    <h2 id="problems-h">Open problems</h2>
+    <ul class="prose">{{ range $W.problems }}<li><p>{{ . }}</p></li>{{ end }}</ul>
+  </section>
+  <section class="sec prose" id="how" aria-labelledby="how-h">
+    <h2 id="how-h">How I work</h2>
+    <p>{{ $W.how_i_work }} {{ $W.growth }}</p>
+    {{ with $W.values }}<p>{{ . }}</p>{{ else }}{{ partial "todo.html" "what you value in colleagues" }}{{ end }}
+  </section>
+  <section class="sec" id="roles" aria-labelledby="roles-h">
+    <h2 id="roles-h">Open roles</h2>
+    {{ with $W.careers_url }}<p><a href="{{ . }}">{{ $W.careers_label }}</a></p>{{ else }}{{ partial "todo.html" "careers URL" }}{{ end }}
+  </section>
+</article>

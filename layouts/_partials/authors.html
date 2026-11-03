@@ -1,0 +1,13 @@
+{{/* Author list with the site owner in bold. Long lists show the first three, the owner and the last author. */}}
+{{ $names := slice }}{{ $me := -1 }}
+{{ range $i, $a := . }}
+  {{ if eq (strings.TrimRight "*" $a) "Ryutaro Tanno" }}{{ $me = $i }}{{ $names = $names | append (printf "<strong>%s</strong>" (htmlEscape $a)) }}{{ else }}{{ $names = $names | append (htmlEscape $a) }}{{ end }}
+{{ end }}
+{{ $n := len $names }}
+{{ if le $n 10 }}{{ delimit $names ", " | safeHTML }}
+{{ else }}
+  {{ $shown := first 3 $names }}
+  {{ if ge $me 3 }}{{ if gt $me 3 }}{{ $shown = $shown | append "…" }}{{ end }}{{ $shown = $shown | append (index $names $me) }}{{ end }}
+  {{ if or (lt $me 0) (lt $me (sub $n 1)) }}{{ $shown = $shown | append "…" (index $names (sub $n 1)) }}{{ end }}
+  {{ delimit $shown ", " | safeHTML }}
+{{ end }}

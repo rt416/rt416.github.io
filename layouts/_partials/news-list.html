@@ -1,0 +1,5 @@
+<ul class="dated">
+  {{ range . }}
+  <li><time datetime="{{ .date }}">{{ partial "month.html" .date }}</time><p class="m">{{ .text }}{{ with .url }} <a href="{{ . }}">Read</a>{{ end }}</p></li>
+  {{ end }}
+</ul>

@@ -1,0 +1,4 @@
+{{/* All news, newest first, with the launch item added at launch. Pass the page. */}}
+{{ $news := hugo.Data.news }}
+{{ if partial "launched.html" . }}{{ $news = slice hugo.Data.launch.news | append hugo.Data.news }}{{ end }}
+{{ return $news }}

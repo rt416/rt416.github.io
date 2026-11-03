@@ -1,0 +1,5 @@
+<ul class="inline">
+  {{- range hugo.Data.site.links }}
+  <li>{{ if .email }}<a href="#contact" data-u="{{ hugo.Data.site.email.user }}" data-d="{{ hugo.Data.site.email.domain }}">{{ .label }}</a>{{ else if .url }}<a href="{{ .url }}" rel="me">{{ .label }}</a>{{ end }}</li>
+  {{- end }}
+</ul>

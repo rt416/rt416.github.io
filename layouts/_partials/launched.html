@@ -1,0 +1,4 @@
+{{/* True when the launch flag is on and the launch-only copy (data/launch.yaml) is present. */}}
+{{ $on := and site.Params.launch (isset hugo.Data "launch") }}
+{{ if and site.Params.launch (not $on) }}{{ warnf "params.launch is true but data/launch.yaml is missing: building the pre-launch site" }}{{ end }}
+{{ return $on }}

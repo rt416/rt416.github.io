@@ -1,0 +1,4 @@
+{{/* "2026-05" -> "May 2026"; "2026" stays "2026". */}}
+{{ $d := . }}
+{{ if eq (len $d) 7 }}{{ return dateFormat "Jan 2006" (printf "%s-01" $d) }}{{ else if eq (len $d) 10 }}{{ return dateFormat "Jan 2006" $d }}{{ end }}
+{{ return $d }}

@@ -1,0 +1,50 @@
+# Career, advisory roles, education and recognition. Use this wording everywhere, including LinkedIn.
+roles:
+  - years: "2022–2026"
+    org: "Google DeepMind"
+    role: "Staff Research Scientist"
+    points:
+      - "Research lead, AI co-clinician (Science Unit)"
+      - "Co-tech lead, AMIE research programme (conversational diagnostic AI)"
+      - "Co-lead of multimodality, Med-Gemini"
+      - "Research lead, Flamingo-CXR: clinician–AI collaboration on radiology report generation"
+      - "Contributor, AI co-scientist"
+  - years: "2019–2022"
+    org: "Microsoft Research Cambridge"
+    role: "Senior Researcher"
+    points:
+      - "Project InnerEye, deployed across the NHS for radiotherapy"
+      - "T-Detect, the first T-cell based COVID test"
+      - "Led a small team that built a robustness toolkit used by 50+ colleagues"
+      - "Supervised postdocs, interns and AI residents"
+advisory:
+  - org: "Aillis"
+    role: "Technical Fellow, Advisory Board (AI strategy)"
+    when: "Current"
+  - org: "Terumo"
+    role: "Technical Advisor"
+    when: "Past"
+  - org: "SyntheticGestalt"
+    role: "Technical Advisor"
+    when: "Past"
+early:
+  - org: "ThinkSono"
+    role: "Founding Engineer"
+    when: "2016–2018"
+  - org: "Butterfly Network"
+    role: "Research Intern; algorithm shipped in product"
+    when: "2018"
+recognition: "MICCAI 2017 Best Paper Award; orals at ICML 2019 and ICCV 2019."
+education:
+  - degree: "PhD in Computer Vision and Machine Learning"
+    school: "UCL"
+    year: 2020
+  - degree: "MPhil in Computational Neuroscience"
+    school: "Cambridge"
+    year: 2015
+  - degree: "MASt in Pure Mathematics (Part III)"
+    school: "Cambridge"
+    year: 2014
+  - degree: "BSc in Pure Mathematics"
+    school: "Imperial College London"
+    year: 2013

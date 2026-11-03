@@ -1,0 +1,41 @@
+{{ $launched := partial "launched.html" . }}
+{{ $writing := hugo.Data.writing | default slice }}
+{{ $essay := cond $launched hugo.Data.launch.essay nil }}
+<article>
+  <h1 class="page-h">Talks &amp; Blogs</h1>
+
+  {{ if or $writing $essay }}
+  <section class="sec" id="blogs" aria-labelledby="blogs-h">
+    <h2 id="blogs-h">Blogs</h2>
+    <ul class="dated">
+      {{ with $essay }}<li><time>2026</time><div><p class="t">{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</p>{{ partial "todo.html" "launch essay" }}</div></li>{{ end }}
+      {{ range $writing }}
+      <li><time datetime="{{ .date }}">{{ partial "month.html" .date }}</time><div><p class="t"><a href="{{ .url }}">{{ .title }}</a></p><p class="m">{{ .venue }}{{ with .summary }} · {{ . }}{{ end }}</p></div></li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  <section class="sec" id="talks" aria-labelledby="talks-h">
+    <h2 id="talks-h">Past Talks</h2>
+    <p class="invite">A selection of talks; I've given many more over the years than are listed here. For invitations, write to {{ partial "email.html" . }}.</p>
+    <ul class="dated">
+      {{ range $t := hugo.Data.talks }}
+      <li id="{{ .id }}"><time datetime="{{ .date }}">{{ if eq (len .date) 7 }}{{ partial "month.html" .date }}{{ else }}{{ dateFormat "2 Jan 2006" .date }}{{ end }}</time>
+        <div><p class="t">{{ .title }}</p><p class="m">{{ with .event_url }}<a href="{{ . }}">{{ $t.event }}</a>{{ else }}{{ $t.event }}{{ end }}{{ with .location }} · {{ . }}{{ end }}{{ with .host }} · Invited by {{ . | markdownify }}{{ end }}</p>
+          {{ partial "links.html" .links }}
+          {{ with .photo }}{{ $ph := (resources.Get .).Resize "720x webp q80" }}{{ $img := printf `<img class="talk__photo" src="%s" width="%d" height="%d" alt="%s" loading="lazy" decoding="async">` $ph.RelPermalink $ph.Width $ph.Height $t.photo_alt }}{{ with $t.photo_link }}<a href="{{ . }}">{{ $img | safeHTML }}</a>{{ else }}{{ $img | safeHTML }}{{ end }}{{ end }}</div></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="sec" id="press" aria-labelledby="press-h">
+    <h2 id="press-h">Press and interviews</h2>
+    <ul class="dated">
+      {{ range where hugo.Data.press "url" "!=" nil }}
+      <li><time datetime="{{ .date }}">{{ partial "month.html" .date }}</time>
+        <div><p class="t"><a href="{{ .url }}">{{ .title }}</a></p><p class="m">{{ .outlet }}{{ with .topic }} · {{ . }}{{ end }}</p></div></li>
+      {{ end }}
+    </ul>
+  </section>
+</article>

@@ -1,0 +1,5 @@
+{{/* Headshot, resized to 1x and 2x WebP. Pass (dict "size" <css px>). */}}
+{{ $img := resources.Get "img/portrait/ryutaro.jpg" }}
+{{ $1x := $img.Fill (printf "%dx%d webp q82 Center" .size .size) }}
+{{ $2x := $img.Fill (printf "%dx%d webp q82 Center" (mul .size 2) (mul .size 2)) }}
+<img class="portrait" src="{{ $1x.RelPermalink }}" srcset="{{ $1x.RelPermalink }} 1x, {{ $2x.RelPermalink }} 2x" width="{{ .size }}" height="{{ .size }}" alt="Ryutaro Tanno" fetchpriority="high">

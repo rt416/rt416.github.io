@@ -1,0 +1,1 @@
+{{ define "main" }}{{ with .Params.template }}{{ partial (printf "pages/%s.html" .) $ }}{{ end }}{{ end }}

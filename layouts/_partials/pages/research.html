@@ -1,0 +1,45 @@
+{{ $pubs := hugo.Data.publications }}
+{{ $scholar := index (where hugo.Data.site.links "label" "Google Scholar") 0 }}
+<article>
+  <h1 class="page-h">Research</h1>
+  <p class="note">See <a href="{{ $scholar.url }}">Google Scholar</a> for the most up-to-date publications. * Equal contribution.</p>
+
+  <section class="sec" id="pubs" aria-labelledby="pubs-h">
+    <h2 id="pubs-h">Publications</h2>
+    {{ $years := slice }}{{ range $pubs }}{{ $years = $years | append .year }}{{ end }}
+    {{ range uniq $years }}
+    {{ $y := . }}
+    <h3 class="year" id="y{{ $y }}">{{ $y }}</h3>
+    <ol class="refs">
+      {{ range where $pubs "year" $y }}
+      {{ $s := .selected | default dict }}
+      {{ $url := (index .links 0).url }}
+      <li class="ref" id="{{ .id }}">
+        <span class="ref__fig">
+          {{ with $s.image }}
+            {{ $img := resources.Get . }}
+            {{ $sm := $img.Resize "320x webp q80" }}
+            {{ $lg := $img.Resize (printf "%dx webp q80" (math.Min 640 $img.Width | int)) }}
+            <a href="{{ $url }}" tabindex="-1" aria-hidden="true"><img class="thumb" src="{{ $sm.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 320w, {{ $lg.RelPermalink }} {{ $lg.Width }}w" sizes="(min-width: 40rem) 9rem, 5.5rem" width="320" height="240" alt="" loading="lazy" decoding="async"></a>
+          {{ else }}{{ if and $s.summary hugo.IsServer }}{{ partial "todo.html" "figure" }}{{ end }}{{ end }}
+        </span>
+        <div>
+          <p class="ref__title"><a href="{{ $url }}">{{ .title }}</a></p>
+          <p class="ref__authors">{{ partial "authors.html" .authors }}</p>
+          <p class="ref__meta"><em>{{ with $s.venue }}{{ . }}{{ else }}{{ if eq .kind "chapter" }}Book chapter in {{ end }}{{ .venue }}, {{ .year }}{{ with .note }} · {{ . }}{{ end }}{{ end }}</em></p>
+          {{ with $s.summary }}<p class="ref__take">{{ . }}</p>{{ end }}
+          {{ if gt (len .links) 1 }}{{ partial "links.html" (after 1 .links) }}{{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+    {{ end }}
+  </section>
+
+  <section class="sec" id="patents" aria-labelledby="patents-h">
+    <h2 id="patents-h">Patents</h2>
+    <ol class="refs">
+      {{ range hugo.Data.patents }}<li class="patent"><p>{{ .citation }}</p>{{ partial "links.html" .links }}</li>{{ end }}
+    </ol>
+  </section>
+</article>

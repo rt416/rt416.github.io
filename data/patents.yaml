@@ -1,0 +1,17 @@
+# Patents, newest first.
+- citation: "Ryutaro Tanno, Aditya Nori, Melanie Fernandez Pradier, Yingzhen Li. Correcting a machine learning model. US 12,613,939 B2, 2026."
+  links:
+    - label: "Patent"
+      url: "https://patents.google.com/patent/US12613939B2/en"
+    - label: "Application"
+      url: "https://patents.google.com/patent/US20230409674A1/en"
+- citation: "Aditya Nori, Antonio Criminisi, Ryutaro Tanno. Neural trees. US20200005148A1, 2020. Granted as US 11,676,078 B2 (2023)."
+  links:
+    - label: "Link"
+      url: "https://patents.google.com/patent/US20200005148A1/en"
+    - label: "Grant"
+      url: "https://patents.google.com/patent/US11676078B2/en"
+- citation: "Fouad Al Noor, Sven Mischkewitz, Antonis Makropoulos, Ryutaro Tanno, Bernhard Kainz, Ozan Otay. Blood vessel obstruction diagnosis method, apparatus & system. WO2018162888A1, 2018."
+  links:
+    - label: "Link"
+      url: "https://patents.google.com/patent/WO2018162888A1/en"

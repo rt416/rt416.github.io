@@ -1,0 +1,11 @@
+{{/* Social card generated at build time; launch wording only appears when the site is launched. */}}
+{{ $launched := partial "launched.html" . }}
+{{ $line := cond $launched (printf "%s · %s" hugo.Data.launch.title hugo.Data.launch.locations) (printf "%s · %s" hugo.Data.site.title hugo.Data.site.locations) }}
+{{ $serif := resources.Get "fonts/SourceSerif4.ttf" }}
+{{ $sans := resources.Get "fonts/Inter.ttf" }}
+{{ $img := (resources.Get "og/base.png").Filter
+  (images.Text hugo.Data.site.name (dict "font" $serif "size" 92 "color" "#1c1b19" "x" 96 "y" 210))
+  (images.Text $line (dict "font" $sans "size" 34 "color" "#5d5a54" "x" 96 "y" 340 "linespacing" 10))
+  (images.Text "rt416.github.io" (dict "font" $sans "size" 28 "color" "#9b2c1f" "x" 96 "y" 520))
+}}
+{{ return $img }}

@@ -1,0 +1,27 @@
+{{/* Pages that depend on data rather than content files. */}}
+
+{{/* Work with me exists only at launch. */}}
+{{ if partial "launched.html" . }}
+  {{ $.AddPage (dict "path" "work-with-me" "kind" "page" "title" "Work with me" "params" (dict "template" "work-with-me")) }}
+{{ end }}
+
+{{/* Old Hugo Academic URLs redirect to their new homes, so existing links keep working. */}}
+{{ $redirects := slice }}
+{{ range hugo.Data.publications }}
+  {{ if .legacy_slug }}{{ $redirects = $redirects | append (dict "from" (printf "publication/%s" .legacy_slug) "to" (printf "/research/#%s" .id)) }}{{ end }}
+{{ end }}
+{{ $redirects = $redirects | append (dict "from" "publication/kostas-ants" "to" "/research/#kostas-icml") }}
+{{ range hugo.Data.talks }}
+  {{ $redirects = $redirects | append (dict "from" (printf "talk/%s" .id) "to" (printf "/talks/#%s" .id)) }}
+{{ end }}
+{{ range slice "talk/ucl" "talk" }}{{ $redirects = $redirects | append (dict "from" . "to" "/talks/#talks") }}{{ end }}
+{{ range slice "publication" "preprints" "preprints/ants" "preprints/deep-iqt" "publication_types" "publication_types/1" "publication_types/2" }}
+  {{ $redirects = $redirects | append (dict "from" . "to" "/research/") }}
+{{ end }}
+{{ range slice "patent" "patents" "patent/microsoft" "patent/thinksono" "patents/microsoft" "patents/thinksono" }}
+  {{ $redirects = $redirects | append (dict "from" . "to" "/research/#patents") }}
+{{ end }}
+{{ range slice "categories" "tags" "home" }}{{ $redirects = $redirects | append (dict "from" . "to" "/") }}{{ end }}
+{{ range $redirects }}
+  {{ $.AddPage (dict "path" .from "kind" "page" "title" "Moved" "params" (dict "redirect" .to) "sitemap" (dict "disable" true)) }}
+{{ end }}

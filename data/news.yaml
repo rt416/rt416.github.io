@@ -1,0 +1,13 @@
+# News, newest first. The five most recent show on the home page; older items sit under "Earlier news" there.
+- date: "2026-10"
+  text: "Our prospective feasibility study of AMIE in primary care is published in The Lancet."
+  url: "https://doi.org/10.1016/S0140-6736(26)01535-7"
+- date: "2026-05"
+  text: "Co-Scientist is published in Nature."
+  url: "https://www.nature.com/articles/s41586-026-10644-y"
+- date: "2026-05"
+  text: "Multimodal AMIE is published in Nature Medicine."
+  url: "https://www.nature.com/articles/s41591-026-04371-0"
+- date: "2026-04"
+  text: "Google DeepMind announces the AI co-clinician research initiative."
+  url: "https://deepmind.google/blog/ai-co-clinician/"

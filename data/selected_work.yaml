@@ -1,0 +1,109 @@
+# Selected work on the home page: themes, then one row per project with its key papers.
+# Each paper links to 'pub' (an id in publications.yaml) unless 'url' is given; 'label' and 'venue' are the short forms shown.
+# 'demos' adds a row of play buttons linking to videos.
+# A project with many papers can use 'groups' (each with a 'label' and its own 'papers') instead of 'papers'.
+# 'art' names the small illustration beside a project (assets/art/<art>.svg). Without it, the figure from
+# the project's first paper is used; set 'figure' to another pub id to change that.
+- title: "LLMs & Agents for Medicine and Science"
+  projects:
+    - name: "AMIE"
+      art: "amie"
+      summary: "Conversational diagnostic AI, from simulated consultations to a prospective study in primary care."
+      groups:
+        - label: "Diagnosis & management"
+          papers:
+            - { label: "Text-only", pub: "amie-diagnostic-nature-2025", venue: "Nature 2025" }
+            - { label: "Multimodal", pub: "amie-multimodal-natmed-2026", venue: "Nature Medicine 2026" }
+            - { label: "Disease management", pub: "amie-disease-management-nature-2026", venue: "Nature 2026" }
+        - label: "Specialist care"
+          papers:
+            - { label: "Cardiology", pub: "amie-cardiology-natmed-2026", venue: "Nature Medicine 2026" }
+            - { label: "Oncology", pub: "amie-oncology-nejmai-2025", venue: "NEJM AI 2025" }
+        - label: "Safety & deployment"
+          papers:
+            - { label: "Safety guardrails + expert oversight", pub: "g-amie-oversight-2025", venue: "arXiv 2025" }
+            - { label: "Prospective validation in primary care", pub: "amie-primary-care-lancet-2026", venue: "The Lancet 2026" }
+    - name: "Gemini & Med-Gemini"
+      art: "gemini"
+      figure: "med-gemini-capabilities-2024"
+      summary: "Gemini models and their specialisation for medicine, from clinical text to medical imaging modalities and genomics."
+      papers:
+        - { label: "Gemini 2.5", pub: "gemini-2-5-2025", url: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/", venue: "Google blog 2025" }
+        - { label: "Med-Gemini", pub: "med-gemini-capabilities-2024", venue: "arXiv 2024" }
+    - name: "AI Co-Clinician"
+      art: "coclinician"
+      summary: "A research initiative on triadic care, in which AI works alongside both patients and physicians. One key ingredient is a real-time agent that sees, hears and speaks with patients over live video."
+      papers:
+        - { label: "Medical AI with eyes, ears and a voice", pub: "ai-co-clinician-eyes-ears-voice-2026", venue: "arXiv 2026" }
+      demos:
+        - { label: "Abdominal pain", url: "https://www.youtube.com/watch?v=y5Vaa_SN1t0" }
+        - { label: "Drooping eyelid", url: "https://www.youtube.com/watch?v=dC4icb75vLQ" }
+        - { label: "Shoulder pain", url: "https://www.youtube.com/watch?v=E7iEvWo-E6c" }
+    - name: "AI Co-Scientist"
+      art: "coscientist"
+      summary: "A multi-agent system that generates, critiques and refines scientific hypotheses."
+      papers:
+        - { label: "Paper", pub: "co-scientist-nature-2026", venue: "Nature 2026" }
+    - name: "Flamingo-CXR"
+      art: "flamingo"
+      summary: "Expert-level specialised VLM post-trained for radiology report generation. Clinician–AI collaboration led to the best results."
+      papers:
+        - { label: "Paper", pub: "flamingo-cxr-natmed-2025", venue: "Nature Medicine 2025" }
+
+- title: "Reliable AI: Robustness, Fairness & Uncertainty"
+  projects:
+    - name: "Robustness and Fairness"
+      art: "fairness"
+      summary: "Generative models that make medical classifiers fairer under distribution shift."
+      papers:
+        - { label: "Paper", pub: "generative-fairness-natmed-2024", venue: "Nature Medicine 2024" }
+    - name: "Learning from Noisy and Biased Labels"
+      art: "labels"
+      summary: "Separating annotators' errors from the truth, and choosing which labels to clean."
+      papers:
+        - { label: "Annotator confusion", pub: "trace", venue: "CVPR 2019" }
+        - { label: "Human error in segmentation", pub: "neurips_humanerror", venue: "NeurIPS 2020" }
+        - { label: "Active label cleaning", pub: "labelclean_naturecomm", venue: "Nature Communications 2022" }
+    - name: "Active Learning"
+      art: "active"
+      summary: "Use a small proxy model to inform which data and in what order a large model should learn from to improve sample-efficiency and performance."
+      papers:
+        - { label: "Bad students make great teachers", pub: "bad-students-eccv-2024", venue: "ECCV 2024" }
+    - name: "Model Repair"
+      art: "repair"
+      summary: "Finding why a model fails in deployment and repairing it."
+      papers:
+        - { label: "Failure analysis", pub: "miccai_failureanalysis", venue: "MICCAI 2021" }
+        - { label: "Continual un-learning for model repair", pub: "icml_modelrepair", venue: "NeurIPS 2022" }
+    - name: "Uncertainty Quantification"
+      art: "uncertainty"
+      summary: "Deep learning that estimates different types of uncertainty, to gauge the risk of failure and explain its causes."
+      papers:
+        - { label: "Bayesian image quality transfer", pub: "biqt-rf", venue: "MICCAI 2017 (Young Scientist Award)" }
+        - { label: "Safer neuroimage enhancement", pub: "neuroimage2019", venue: "NeuroImage 2020" }
+        - { label: "Uncertainty in medical image synthesis", pub: "imgsynthesis_chapter", venue: "Book chapter 2022" }
+
+- title: "Architectures & Representation Learning"
+  projects:
+    - name: "Adaptive Neural Trees"
+      art: "ants"
+      summary: "Marrying neural networks and decision trees to get the best of both worlds."
+      papers:
+        - { label: "Paper", pub: "ants", venue: "ICML 2019 · Oral" }
+    - name: "Stochastic Filter Groups"
+      art: "sfg"
+      summary: "Multi-task networks that learn which convolution kernels to share across tasks and which to specialise."
+      papers:
+        - { label: "Paper", pub: "sfg", venue: "ICCV 2019 · Oral" }
+    - name: "Learning Where to Look"
+      art: "look"
+      summary: "Learning where to sample ultra-high-resolution images before segmenting them, keeping detail where it matters."
+      papers:
+        - { label: "Foveation", pub: "neurips_foveation", venue: "MICCAI 2020" }
+        - { label: "Learning to downsample", pub: "iclr_deformation", venue: "ICLR 2022" }
+    - name: "Learning Better Vision–Language Alignment"
+      art: "vlalign"
+      summary: "Learning object-level concepts from images and text, and aligning vision–language models with diffusion models."
+      papers:
+        - { label: "Multi-concept prompt learning", pub: "mcpl-icml-2024", venue: "ICML 2024" }
+        - { label: "Diffusion instruction tuning", pub: "lavender-diffusion-instruction-tuning-icml-2025", venue: "ICML 2025" }

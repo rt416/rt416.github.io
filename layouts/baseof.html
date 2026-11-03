@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+{{- if .Params.redirect }}
+{{ $to := .Params.redirect }}
+<meta charset="utf-8">
+<title>Moved · {{ site.Title }}</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{{ (index (split $to "#") 0) | absURL }}">
+<meta http-equiv="refresh" content="0; url={{ $to }}">
+{{- else }}
+{{ partial "head.html" . }}
+{{- end }}
+</head>
+<body>
+{{- if .Params.redirect }}
+<p>This page has moved to <a href="{{ .Params.redirect }}">{{ .Params.redirect | absURL }}</a>.</p>
+{{- else }}
+<a class="skip" href="#main">Skip to content</a>
+{{ partial "mast.html" . }}
+<main id="main">
+{{ block "main" . }}{{ end }}
+</main>
+{{ partial "foot.html" . }}
+{{- end }}
+</body>
+</html>

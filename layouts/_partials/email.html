@@ -1,0 +1,2 @@
+{{- /* Obfuscated email address: readable without JavaScript, completed into a mailto link by the script in foot.html. */ -}}
+{{- with hugo.Data.site.email }}<a href="#contact" data-u="{{ .user }}" data-d="{{ .domain }}" data-show>{{ .user }} at {{ replace .domain "." " dot " }}</a>{{ end -}}

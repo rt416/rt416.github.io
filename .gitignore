@@ -1,0 +1,12 @@
+# Hugo build output
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Launch-only copy: kept out of this public repo until launch day (see README)
+/data/launch.yaml
+
+# Local tooling
+/.claude/
+node_modules/
+.DS_Store
