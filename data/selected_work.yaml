@@ -12,7 +12,7 @@
     - name: "AMIE"
       art: "amie"
       summary: "Conversational diagnostic AI, from simulated consultations to a prospective study in primary care."
-      summary_ja: "対話を通じて診断を行うAI。シミュレーションでの診察から、プライマリケアでの前向き研究まで。"
+      summary_ja: "対話を通じて診断を行うAI。シミュレーションでの診察から、実際の臨床現場まで。"
       groups:
         - label: "Diagnosis & management"
           label_ja: "診断と治療管理"
@@ -29,7 +29,7 @@
           label_ja: "安全性と実臨床への展開"
           papers:
             - { label: "Safety guardrails + expert oversight", label_ja: "安全ガードレールと専門家による監督", pub: "g-amie-oversight-2025", venue: "arXiv 2025" }
-            - { label: "Prospective validation in primary care", label_ja: "プライマリケアでの前向き検証", pub: "amie-primary-care-lancet-2026", venue: "The Lancet 2026" }
+            - { label: "Prospective validation in primary care", label_ja: "総合内科での臨床検証", pub: "amie-primary-care-lancet-2026", venue: "The Lancet 2026" }
     - name: "Gemini & Med-Gemini"
       art: "gemini"
       figure: "med-gemini-capabilities-2024"
