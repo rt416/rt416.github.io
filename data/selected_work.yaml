@@ -59,7 +59,7 @@
         - { label: "Paper", pub: "generative-fairness-natmed-2024", venue: "Nature Medicine 2024" }
     - name: "Learning from Noisy and Biased Labels"
       art: "labels"
-      summary: "Separating annotators' errors from the truth, and choosing which labels to clean."
+      summary: "Separating annotators’ errors from the truth, and choosing which labels to clean."
       papers:
         - { label: "Annotator confusion", pub: "trace", venue: "CVPR 2019" }
         - { label: "Human error in segmentation", pub: "neurips_humanerror", venue: "NeurIPS 2020" }

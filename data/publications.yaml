@@ -280,7 +280,7 @@
     - "Jason Gusdorf*"
     - "Anil Palepu*"
     - "Chunjong Park*"
-    - "Jack W. O'Sullivan"
+    - "Jack W. O’Sullivan"
     - "Vishnu Ravi"
     - "Tim Strother"
     - "Pavel Dubov"
@@ -616,7 +616,7 @@
       url: "https://astrazeneca.github.io/vlm/"
   selected:
     venue: "ICML 2025"
-    summary: "Aligns a vision-language model's attention with Stable Diffusion's, boosting visual understanding with just 0.13M training examples."
+    summary: "Aligns a vision-language model’s attention with Stable Diffusion’s, boosting visual understanding with just 0.13M training examples."
     image: "img/research/lavender-diffusion-instruction-tuning-icml-2025.jpg"
 - id: "flamingo-cxr-natmed-2025"
   title: "Collaboration between clinicians and vision–language models in radiology report generation"
@@ -662,7 +662,7 @@
       url: "https://arxiv.org/abs/2311.18260"
   selected:
     venue: "Nature Medicine 2025"
-    summary: "Radiologists rated most AI-drafted chest X-ray reports as good as or better than clinicians' own; we show clinicians and AI writing them together."
+    summary: "Radiologists rated most AI-drafted chest X-ray reports as good as or better than clinicians’ own; we show clinicians and AI writing them together."
     image: "img/research/flamingo.jpg"
 - id: "bad-students-eccv-2024"
   title: "Bad Students Make Great Teachers: Active Learning Accelerates Large-Scale Visual Understanding"
@@ -769,7 +769,7 @@
       url: "https://astrazeneca.github.io/mcpl.github.io"
   selected:
     venue: "ICML 2024"
-    summary: "Learns several new 'words' at once from a single image and sentence, one for each object in the scene."
+    summary: "Learns several new ‘words’ at once from a single image and sentence, one for each object in the scene."
     image: "img/research/mcpl-icml-2024.jpg"
 - id: "med-gemini-capabilities-2024"
   title: "Capabilities of Gemini Models in Medicine"
@@ -1022,7 +1022,7 @@
       url: "https://arxiv.org/abs/2207.04806"
   selected:
     venue: "NeurIPS 2022"
-    summary: "Finds the training examples behind a model's failure and repairs it by making the model forget them."
+    summary: "Finds the training examples behind a model’s failure and repairs it by making the model forget them."
     image: "img/research/icml_modelrepair.jpg"
 - id: "imgsynthesis_chapter"
   legacy_slug: "imgsynthesis_chapter"
@@ -1044,7 +1044,7 @@
       url: "https://www.sciencedirect.com/book/9780128243497/biomedical-image-synthesis-and-simulation"
   selected:
     venue: "Book chapter 2022"
-    summary: "A survey of uncertainty quantification in medical image synthesis, and why it matters for clinicians' trust."
+    summary: "A survey of uncertainty quantification in medical image synthesis, and why it matters for clinicians’ trust."
     image: "img/research/imgsynthesis_chapter.jpg"
 - id: "iclr_deformation"
   legacy_slug: "iclr_deformation"
@@ -1151,7 +1151,7 @@
       url: "https://github.%20com/UCLBrain/Modelling_Segmentation_Annotators_Pytorch"
   selected:
     venue: "NeurIPS 2020"
-    summary: "Separates each annotator's errors from the true segmentation when experts disagree."
+    summary: "Separates each annotator’s errors from the true segmentation when experts disagree."
     image: "img/research/neurips_humanerror.jpg"
 - id: "neurips_foveation"
   legacy_slug: "neurips_foveation"
@@ -1278,7 +1278,7 @@
       url: "https://youtu.be/fyKoxmy2ouA"
   selected:
     venue: "CVPR 2019"
-    summary: "Recovers the truth from noisy labels by estimating each annotator's confusions."
+    summary: "Recovers the truth from noisy labels by estimating each annotator’s confusions."
     image: "img/research/trace.jpg"
 - id: "multitask-01"
   legacy_slug: "multitask-01"
