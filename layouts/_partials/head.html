@@ -1,12 +1,18 @@
 {{ $launched := partial "launched.html" . }}
 {{ $S := hugo.Data.site }}
-{{ $desc := .Params.description | default (cond $launched hugo.Data.launch.description $S.description) }}
+{{ $ja := eq .Params.lang "ja" }}
+{{ $desc := .Params.description | default (cond $ja hugo.Data.ja.description (cond $launched hugo.Data.launch.description $S.description)) }}
 {{ $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $desc }}">
 <link rel="canonical" href="{{ .Permalink }}">
+{{ if or .IsHome $ja }}{{/* The home page and its Japanese version point at each other. */}}
+<link rel="alternate" hreflang="en" href="{{ "/" | absURL }}">
+<link rel="alternate" hreflang="ja" href="{{ "/ja/" | absURL }}">
+<link rel="alternate" hreflang="x-default" href="{{ "/" | absURL }}">
+{{ end }}
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#fbfaf6">
 <link rel="preload" href="/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -18,6 +24,7 @@
 {{ $og := partial "og-image.html" . }}
 <meta property="og:type" content="{{ if .IsHome }}profile{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="{{ cond $ja "ja_JP" "en_GB" }}">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">

@@ -59,6 +59,14 @@
 /* ---------------------------------------------------------------- base */
 
 *, *::before, *::after { box-sizing: border-box; }
+/* Japanese home page: Japanese system fonts after the Latin ones, looser lines, strict line breaking. */
+:root:lang(ja) {
+  --serif: "Source Serif 4", "Source Serif 4 Fallback: Georgia", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", serif;
+  --sans: Inter, "Inter Fallback: Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, "Noto Sans JP", sans-serif;
+}
+html:lang(ja) body { line-height: 1.85; line-break: strict; }
+html:lang(ja) .project__sum { line-height: 1.7; }
+
 html { background: var(--bg); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0; padding: 0 var(--gutter);
@@ -100,6 +108,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 .mast__name { font-size: 1.125rem; font-weight: 600; }
 .mast ul { display: flex; gap: 1.1rem; margin: 0; padding: 0; list-style: none; }
 .mast nav a { color: var(--muted); font-size: .875rem; }
+.mast__lang { padding-left: 1.1rem; border-left: 1px solid var(--rule); }
+@media (max-width: 26rem) { .mast ul { gap: .8rem; } .mast__lang { padding-left: .8rem; } }
 .mast nav a:hover, .mast nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: .35em; }
 
 main { max-width: var(--measure); margin: 0 auto; }

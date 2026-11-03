@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="{{ .Params.lang | default "en-GB" }}">
 <head>
 {{- if .Params.redirect }}
 {{ $to := .Params.redirect }}
@@ -16,7 +16,7 @@
 {{- if .Params.redirect }}
 <p>This page has moved to <a href="{{ .Params.redirect }}">{{ .Params.redirect | absURL }}</a>.</p>
 {{- else }}
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">{{ if eq .Params.lang "ja" }}{{ hugo.Data.ja.labels.skip }}{{ else }}Skip to content{{ end }}</a>
 {{ partial "mast.html" . }}
 <main id="main">
 {{ block "main" . }}{{ end }}

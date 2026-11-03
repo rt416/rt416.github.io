@@ -1,9 +1,10 @@
 {{ $launched := partial "launched.html" . }}
+{{ $ja := eq .Params.lang "ja" }}{{ $T := hugo.Data.ja.labels }}
 <footer class="endnotes" id="contact">
-  <p class="label">Contact</p>
+  <p class="label">{{ cond $ja $T.contact "Contact" }}</p>
   {{ partial "contact-links.html" . }}
   <noscript><p>Email: {{ hugo.Data.site.email.user }} at {{ replace hugo.Data.site.email.domain "." " dot " }}</p></noscript>
   {{ if and $launched (not (eq .RelPermalink "/work-with-me/")) }}<p class="wwm"><a href="/work-with-me/">{{ hugo.Data.launch.work_with_me.footer_link }}</a></p>{{ end }}
-  <p class="updated">Last updated {{ site.Lastmod.Format "2 January 2006" }}</p>
+  <p class="updated">{{ if $ja }}{{ $T.updated }}：{{ site.Lastmod.Format "2006年1月2日" }}{{ else }}Last updated {{ site.Lastmod.Format "2 January 2006" }}{{ end }}</p>
 </footer>
 <script>document.querySelectorAll("a[data-u]").forEach(function(a){var e=a.dataset.u+"@"+a.dataset.d;a.href="mailto:"+e;if(a.hasAttribute("data-show"))a.textContent=e});</script>

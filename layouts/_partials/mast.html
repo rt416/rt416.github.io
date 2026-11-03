@@ -1,11 +1,13 @@
+{{ $ja := eq .Params.lang "ja" }}
 <header class="mast">
-  <a class="mast__name" href="/"{{ if .IsHome }} aria-current="page"{{ end }}>{{ hugo.Data.site.name }}</a>
+  <a class="mast__name" href="{{ cond $ja "/ja/" "/" }}"{{ if or .IsHome $ja }} aria-current="page"{{ end }}>{{ cond $ja hugo.Data.ja.name hugo.Data.site.name }}</a>
   <nav aria-label="Primary">
     <ul>
       {{- $here := .RelPermalink }}
       {{- range slice (dict "t" "Research" "u" "/research/") (dict "t" "Talks" "u" "/talks/") }}
-      <li><a href="{{ .u }}"{{ if eq $here .u }} aria-current="page"{{ end }}>{{ .t }}</a></li>
+      <li><a href="{{ .u }}"{{ if eq $here .u }} aria-current="page"{{ end }}{{ if $ja }} hreflang="en"{{ end }}>{{ .t }}</a></li>
       {{- end }}
+      <li class="mast__lang">{{ if $ja }}<a href="/" lang="en" hreflang="en">English</a>{{ else }}<a href="/ja/" lang="ja" hreflang="ja">日本語</a>{{ end }}</li>
     </ul>
   </nav>
 </header>

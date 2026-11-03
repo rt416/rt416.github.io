@@ -2,6 +2,6 @@
 {{ $S := hugo.Data.site }}
 {{ $sameAs := slice }}{{ range $S.links }}{{ if and .url (not .email) }}{{ $sameAs = $sameAs | append .url }}{{ end }}{{ end }}
 {{ $schools := slice }}{{ range slice "University College London" "University of Cambridge" "Imperial College London" }}{{ $schools = $schools | append (dict "@type" "CollegeOrUniversity" "name" .) }}{{ end }}
-{{ $p := dict "@context" "https://schema.org" "@type" "Person" "name" $S.name "url" site.BaseURL "sameAs" $sameAs "alumniOf" $schools "description" (cond $launched hugo.Data.launch.description $S.description) "knowsAbout" (slice "Machine learning" "Clinical AI" "Medical imaging") }}
+{{ $p := dict "@context" "https://schema.org" "@type" "Person" "name" $S.name "alternateName" hugo.Data.ja.name "url" site.BaseURL "sameAs" $sameAs "alumniOf" $schools "description" (cond $launched hugo.Data.launch.description $S.description) "knowsAbout" (slice "Machine learning" "Clinical AI" "Medical imaging") }}
 {{ if $launched }}{{ $p = merge $p (dict "jobTitle" hugo.Data.launch.job_title "worksFor" (dict "@type" "Organization" "name" hugo.Data.launch.org)) }}{{ end }}
 <script type="application/ld+json">{{ $p | jsonify | safeJS }}</script>

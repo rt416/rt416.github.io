@@ -1,0 +1,61 @@
+{{/* The home page body, in English (/) or Japanese (/ja/, content/ja.md). Japanese text comes from data/ja.yaml and *_ja fields. */}}
+{{ $launched := partial "launched.html" . }}
+{{ $ja := eq .Params.lang "ja" }}
+{{ $S := cond $ja hugo.Data.ja hugo.Data.site }}{{ $L := hugo.Data.launch }}{{ $T := hugo.Data.ja.labels }}
+<article>
+  <h1 class="visually-hidden">{{ $S.name }}</h1>
+
+  <section class="intro" aria-label="{{ cond $ja "自己紹介" "Introduction" }}">
+    {{ partial "portrait.html" (dict "size" 128) }}
+    {{ if $launched }}
+    {{ if $ja }}<p>{{ with $L.mission_ja }}{{ . }}{{ else }}{{ partial "todo.html" "Japanese launch mission (launch.yaml mission_ja)" }}{{ end }}</p>
+    {{ else }}<p>{{ $L.mission }}{{ with $L.mission_status }} {{ partial "todo.html" . }}{{ end }}</p>{{ end }}
+    {{ else }}
+    <p>{{ $S.intro }}{{ with $S.intro_status }} {{ partial "todo.html" . }}{{ end }}</p>
+    {{ end }}
+    {{ range $S.past }}<p>{{ . | markdownify }}</p>{{ end }}
+  </section>
+
+  {{ if site.Params.show_news }}
+  {{ $news := partial "news-items.html" . }}
+  <section class="sec" id="news" aria-labelledby="news-h">
+    <h2 id="news-h">{{ cond $ja $T.news "News" }}</h2>
+    {{ partial "news-list.html" (first 5 $news) }}
+    {{ if gt (len $news) 5 }}<details class="earlier"><summary>{{ cond $ja $T.earlier_news "Earlier news" }}</summary>{{ partial "news-list.html" (after 5 $news) }}</details>{{ end }}
+  </section>
+  {{ end }}
+
+  <section class="sec" id="work" aria-labelledby="work-h">
+    <h2 id="work-h">{{ cond $ja $T.selected_work "Selected Work" }}</h2>
+    {{ range hugo.Data.selected_work }}
+    <h3>{{ cond $ja (.title_ja | default .title) .title }}</h3>
+    <ul class="projects">
+      {{ range .projects }}
+      {{ $first := cond (isset . "groups") (index (index .groups 0).papers 0) (index .papers 0) }}
+      {{ $fig := "" }}{{ with index (where hugo.Data.publications "id" (.figure | default $first.pub)) 0 }}{{ with .selected }}{{ $fig = .image }}{{ end }}{{ end }}
+      <li{{ if or .art $fig }} class="has-fig"{{ end }}>
+        {{ with .art }}<span class="project__fig project__art" aria-hidden="true">{{ (resources.Get (printf "art/%s.svg" .)).Content | safeHTML }}</span>
+        {{ else }}{{ with $fig }}{{ $t := (resources.Get .).Resize "176x webp q80" }}<img class="project__fig" src="{{ $t.RelPermalink }}" width="{{ $t.Width }}" height="{{ $t.Height }}" alt="" loading="lazy" decoding="async">{{ end }}{{ end }}
+        <div class="project__body">
+        <p class="project__name">{{ cond $ja (.name_ja | default .name) .name }}</p>
+        <p class="project__sum">{{ cond $ja (.summary_ja | default .summary) .summary }}</p>
+        {{ with .groups }}
+        {{ range . }}
+        <div class="project__group"><p class="project__glabel">{{ cond $ja (.label_ja | default .label) .label }}</p>{{ partial "project-papers.html" (dict "papers" .papers "ja" $ja) }}</div>
+        {{ end }}
+        {{ else }}
+        {{ partial "project-papers.html" (dict "papers" .papers "ja" $ja) }}
+        {{ end }}
+        </div>
+        {{ with .demos }}
+        <div class="demos"><span class="demos__label">{{ cond $ja $T.demos "Demos:" }}</span>
+          <span class="demos__list">{{ range . }}<a class="demo" href="{{ .url }}"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2.5 1.5v7l6-3.5z"/></svg>{{ cond $ja (.label_ja | default .label) .label }}</a>{{ end }}</span>
+        </div>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    <p class="more"><a href="/research/"{{ if $ja }} hreflang="en"{{ end }}>{{ cond $ja $T.more "Full publication list and patents" }}</a></p>
+  </section>
+</article>

@@ -1,0 +1,20 @@
+# The Japanese home page (/ja/). It mirrors data/site.yaml's intro and past paragraphs;
+# Selected Work text comes from the *_ja fields in data/selected_work.yaml, falling back to English.
+# Paper titles, venues and links stay in English. Keep this in step with site.yaml when the English changes.
+name: "丹野 龍太郎"
+description: "丹野龍太郎は、医療・生物医学のためのAIシステムを開発しています。元 Google DeepMind Staff Research Scientist。"
+intro: "こんにちは、丹野龍太郎です。この10年間、医療・生物医学分野のためのAIシステムを開発してきました。特に情熱を注いでいるのは、人間の専門家の力を引き出し、その仕事を長く続き、広く届き、喜びのある形で変えていくAIをつくることです。"
+past:
+  - "最近まで Google DeepMind で Staff Research Scientist を務め、医療向けLLMシステムの基礎研究と実社会への展開に取り組んできました。直近では、医療の提供のあり方を見つめ直す Google DeepMind の新たな取り組み、[AI co-clinician](https://x.com/GoogleDeepMind/status/2049867061279457761) の研究を率いました。"
+  - "それ以前は、[Med-Gemini](https://arxiv.org/pdf/2404.18416) のマルチモーダル領域を共同で率いるとともに、Google の対話型診断AIの研究プログラム [AMIE](https://www.nature.com/articles/s41591-026-04371-0) の共同テクニカルリードを務めました。AMIE では、テキストのみによる最初の診断研究から、マルチモーダルな診察、専門医療、疾患管理、そしてプライマリケアでの前向き研究へと発展させる過程をチームとともに進めました。さらにその前には、放射線科レポート作成における人間とAIの協働を初めて実証した [Flamingo-CXR](https://www.nature.com/articles/s41591-024-03302-1) を主導しました。"
+  - "その前は [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) の Health Intelligence グループで、[Aditya Nori](https://www.microsoft.com/en-us/research/people/adityan/) らとともに Senior Researcher として働き、英国 NHS 全体で放射線治療に導入された [InnerEye](https://www.bbc.co.uk/news/health-65988768) や、初のT細胞ベースの COVID 検査である T-Detect に携わりました。博士号（コンピュータビジョンと機械学習）は UCL で取得し、[Daniel C. Alexander](http://www0.cs.ucl.ac.uk/staff/d.alexander/) と [Antonio Criminisi](https://www.microsoft.com/en-us/research/people/acriminisi/)（Microsoft Research）の指導を受けました。"
+  - "また、世界各地の医療AIスタートアップと仕事をする機会にも恵まれてきました。ThinkSono では初期メンバーの一人として、超音波動画から深部静脈血栓症をリアルタイムに検出する深層学習システムのプロトタイプを共同開発しました。Butterfly Network ではリサーチインターンとして、同社の携帯型超音波装置に搭載されたアルゴリズムの開発に携わりました。ほかに SyntheticGestalt やテルモのスピンアウト企業のアドバイザーを務め、現在は Aillis のアドバイザーを務めています。"
+labels:
+  skip: "本文へスキップ"
+  news: "ニュース"
+  earlier_news: "過去のニュース"
+  selected_work: "主な研究"
+  demos: "デモ："
+  more: "論文・特許の一覧（英語）"
+  contact: "連絡先"
+  updated: "最終更新"
