@@ -52,7 +52,7 @@
 
 - title: "Reliable AI: Robustness, Fairness & Uncertainty"
   projects:
-    - name: "Robustness and Fairness"
+    - name: "Robustness & Fairness"
       art: "fairness"
       summary: "Generative models that make medical classifiers fairer under distribution shift."
       papers:
