@@ -53,10 +53,7 @@
   --sans: Inter, "Inter Fallback: Helvetica Neue", "Inter Fallback: Arial", "Helvetica Neue", Arial, sans-serif;
   --measure: 38rem;
   --gutter: max(1.25rem, env(safe-area-inset-left), env(safe-area-inset-right));
-  color-scheme: light dark;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #161514; --ink: #ece8e1; --muted: #aaa59c; --rule: #34302b; --strong-rule: #ece8e1; --accent: #ec9a86; }
+  color-scheme: light;
 }
 
 /* ---------------------------------------------------------------- base */
