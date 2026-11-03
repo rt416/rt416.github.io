@@ -139,6 +139,9 @@ ul.inline a { display: inline-flex; align-items: center; min-height: 44px; }
 .projects > li { padding: .8rem 0; border-top: 1px solid var(--rule); }
 .projects > li:first-child { border-top: 0; padding-top: .2rem; }
 .project__fig { display: none; }
+/* Phones show the small line drawings (not paper figures) in a narrow left column. */
+.projects > li:has(.project__art) { display: grid; grid-template-columns: 3.75rem minmax(0, 1fr); column-gap: .9rem; align-items: start; }
+.project__art { display: block; width: 100%; aspect-ratio: 4 / 3; margin-top: .25rem; border: 1px solid var(--rule); border-radius: 4px; }
 @media (min-width: 40rem) {
   .projects > li.has-fig { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); column-gap: 1.25rem; align-items: start; }
   .project__fig { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; margin-top: .2rem; object-fit: contain; padding: .15rem; border: 1px solid var(--rule); border-radius: 4px; background: #fff; opacity: .8; filter: saturate(.7); transition: opacity .2s, filter .2s; }
