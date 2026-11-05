@@ -3,12 +3,25 @@
 # Leave out 'label' and the venue itself becomes the link.
 # 'demos' adds a 'Demos:' row of play buttons linking to videos.
 # A project with many papers can use 'groups' (each with a 'label' and its own 'papers') instead of 'papers'.
+# 'short' is the theme's label in the jump row under Selected Work (also its anchor).
 # Optional *_ja fields (title, name, summary, label, venue) give the Japanese home page's text; without them it shows the English.
 # 'art' names the small illustration beside a project (assets/art/<art>.svg). Without it, the figure from
 # the project's first paper is used; set 'figure' to another pub id to change that.
 - title: "LLMs & Agents for Medicine and Science"
   title_ja: "医療と科学のためのLLM・エージェント"
+  short: "LLMs & Agents"
+  short_ja: "LLM・エージェント"
   projects:
+    - name: "AI Co-Clinician"
+      art: "coclinician"
+      summary: "A research initiative on triadic care, in which AI works alongside both patients and physicians. One key ingredient is a real-time agent that sees, hears and speaks with patients over live video."
+      summary_ja: "患者・医師・AIの三者でつくる新しいケアのかたち（triadic care）を探る研究イニシアチブ。その柱の一つが、ライブ映像越しに患者を見て、聞き、話すことができるリアルタイムのエージェントです。"
+      papers:
+        - { label: "Medical AI with eyes, ears and a voice", pub: "ai-co-clinician-eyes-ears-voice-2026", venue: "arXiv 2026" }
+      demos:
+        - { label: "Abdominal pain", label_ja: "腹痛", url: "https://www.youtube.com/watch?v=y5Vaa_SN1t0" }
+        - { label: "Drooping eyelid", label_ja: "まぶたの垂れ下がり", url: "https://www.youtube.com/watch?v=dC4icb75vLQ" }
+        - { label: "Shoulder pain", label_ja: "肩の痛み", url: "https://www.youtube.com/watch?v=E7iEvWo-E6c" }
     - name: "AMIE"
       art: "amie"
       summary: "Conversational diagnostic AI, from simulated consultations to a prospective study in primary care."
@@ -38,16 +51,6 @@
       papers:
         - { label: "Gemini 2.5", pub: "gemini-2-5-2025", url: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/", venue: "Google blog 2025" }
         - { label: "Med-Gemini", pub: "med-gemini-capabilities-2024", venue: "arXiv 2024" }
-    - name: "AI Co-Clinician"
-      art: "coclinician"
-      summary: "A research initiative on triadic care, in which AI works alongside both patients and physicians. One key ingredient is a real-time agent that sees, hears and speaks with patients over live video."
-      summary_ja: "患者・医師・AIの三者でつくる新しいケアのかたち（triadic care）を探る研究イニシアチブ。その柱の一つが、ライブ映像越しに患者を見て、聞き、話すことができるリアルタイムのエージェントです。"
-      papers:
-        - { label: "Medical AI with eyes, ears and a voice", pub: "ai-co-clinician-eyes-ears-voice-2026", venue: "arXiv 2026" }
-      demos:
-        - { label: "Abdominal pain", label_ja: "腹痛", url: "https://www.youtube.com/watch?v=y5Vaa_SN1t0" }
-        - { label: "Drooping eyelid", label_ja: "まぶたの垂れ下がり", url: "https://www.youtube.com/watch?v=dC4icb75vLQ" }
-        - { label: "Shoulder pain", label_ja: "肩の痛み", url: "https://www.youtube.com/watch?v=E7iEvWo-E6c" }
     - name: "AI Co-Scientist"
       art: "coscientist"
       summary: "A multi-agent system that generates, critiques and refines scientific hypotheses."
@@ -63,6 +66,8 @@
 
 - title: "Reliable AI: Robustness, Fairness & Uncertainty"
   title_ja: "信頼できるAI：ロバスト性・公平性・不確実性"
+  short: "Reliable AI"
+  short_ja: "信頼できるAI"
   projects:
     - name: "Robustness & Fairness"
       name_ja: "ロバスト性と公平性"
@@ -107,6 +112,8 @@
 
 - title: "Architectures & Representation Learning"
   title_ja: "アーキテクチャと表現学習"
+  short: "Architectures"
+  short_ja: "アーキテクチャ"
   projects:
     - name: "Adaptive Neural Trees"
       art: "ants"

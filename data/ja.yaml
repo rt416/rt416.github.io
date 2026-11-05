@@ -7,8 +7,8 @@ intro: "こんにちは、丹野龍太郎です。この10年間、医療・生�
 past:
   - "Google DeepMind では最近まで Staff Research Scientist として、医療向けLLMシステムの基礎研究から実社会での展開までに取り組んできました。直近では、医療の届け方そのものを捉え直す Google DeepMind の新しい取り組み、[AI co-clinician](https://x.com/GoogleDeepMind/status/2049867061279457761) の研究をリードしました。"
   - "それ以前は、[Med-Gemini](https://arxiv.org/pdf/2404.18416) でマルチモーダル領域を共同でリードし、Google の対話型診断AIの研究プログラム [AMIE](https://www.nature.com/articles/s41591-026-04371-0) では共同テクニカルリードを務めました。AMIE では、テキストのみで行った最初の診断研究から、マルチモーダルな診察、専門医療、疾患管理、そして総合内科の臨床現場での検証へと、チームとともに研究を広げてきました。さらに遡ると、放射線科のレポート作成で人とAIの協働を初めて示した [Flamingo-CXR](https://www.nature.com/articles/s41591-024-03302-1) を主導しました。"
-  - "その前は [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) の Health Intelligence グループで、Senior Researcher として [Aditya Nori](https://www.microsoft.com/en-us/research/people/adityan/) らと働きました。英国の NHS 全体で放射線治療に導入された [InnerEye](https://www.bbc.co.uk/news/health-65988768) や、T細胞を用いた初の COVID 検査 T-Detect に携わりました。博士課程は UCL で、[Daniel C. Alexander](http://www0.cs.ucl.ac.uk/staff/d.alexander/) 先生と [Antonio Criminisi](https://www.microsoft.com/en-us/research/people/acriminisi/) 先生（Microsoft Research）の指導のもと、コンピュータビジョンと機械学習を研究しました。"
-  - "また、世界各地の医療AIスタートアップと関わる機会にも恵まれてきました。ThinkSono には初期メンバーの一人として加わり、超音波動画から深部静脈血栓症をリアルタイムで検出する深層学習システムのプロトタイプを共同開発しました。Butterfly Network ではリサーチインターンとして働き、開発に携わったアルゴリズムが同社の携帯型超音波デバイスに搭載されました。このほか SyntheticGestalt やテルモ発のスピンアウト企業のアドバイザーを務め、現在は Aillis のアドバイザーをしています。"
+  - "その前は [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) の Health Intelligence グループで、Senior Researcher として Aditya Nori らと働きました。英国の NHS 全体で放射線治療に導入された [InnerEye](https://www.bbc.co.uk/news/health-65988768) や、T細胞を用いた初の COVID 検査 T-Detect に携わりました。博士課程は UCL で、Daniel C. Alexander 先生と Antonio Criminisi 先生（Microsoft Research）の指導のもと、コンピュータビジョンと機械学習を研究しました。"
+  - "また、医療AIスタートアップとも関わってきました。ThinkSono では初期メンバーとして、超音波で深部静脈血栓症をリアルタイムに検出する深層学習のプロトタイプを共同開発し、Butterfly Network ではインターンとして、同社の携帯型超音波デバイスに搭載されたアルゴリズムの開発に携わりました。SyntheticGestalt やテルモ発のスピンアウト企業のアドバイザーも務め、現在は Aillis のアドバイザーをしています。"
 labels:
   skip: "本文へスキップ"
   news: "ニュース"
@@ -16,5 +16,6 @@ labels:
   selected_work: "主な研究"
   demos: "デモ："
   more: "論文・特許の一覧（英語）"
+  all_publications: "論文一覧（英語）"
   contact: "連絡先"
   updated: "最終更新"

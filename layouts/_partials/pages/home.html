@@ -14,7 +14,10 @@
     <p>{{ $S.intro }}{{ with $S.intro_status }} {{ partial "todo.html" . }}{{ end }}</p>
     {{ end }}
     {{ range $S.past }}<p>{{ . | markdownify }}</p>{{ end }}
+    <div class="intro__links">{{ partial "contact-links.html" . }}</div>
   </section>
+
+  {{ partial "journey.html" (dict "ja" $ja) }}
 
   {{ if site.Params.show_news }}
   {{ $news := partial "news-items.html" . }}
@@ -27,8 +30,12 @@
 
   <section class="sec" id="work" aria-labelledby="work-h">
     <h2 id="work-h">{{ cond $ja $T.selected_work "Selected Work" }}</h2>
+    <nav aria-label="{{ cond $ja "テーマへ移動" "Jump to theme" }}"><ul class="years">
+      {{ range hugo.Data.selected_work }}<li><a href="#{{ .short | anchorize | replaceRE "-+" "-" }}">{{ cond $ja (.short_ja | default .short) .short }}</a></li>{{ end }}
+      <li><a href="/research/"{{ if $ja }} hreflang="en"{{ end }}>{{ cond $ja $T.all_publications "All publications" }}</a></li>
+    </ul></nav>
     {{ range hugo.Data.selected_work }}
-    <h3>{{ cond $ja (.title_ja | default .title) .title }}</h3>
+    <h3 id="{{ .short | anchorize | replaceRE "-+" "-" }}">{{ cond $ja (.title_ja | default .title) .title }}</h3>
     <ul class="projects">
       {{ range .projects }}
       {{ $first := cond (isset . "groups") (index (index .groups 0).papers 0) (index .papers 0) }}
@@ -48,9 +55,19 @@
         {{ end }}
         </div>
         {{ with .demos }}
+        {{/* A still from each YouTube demo (assets/img/demos/<video id>.jpg) makes a card; without one, a play button. */}}
+        {{ $stills := 0 }}{{ range . }}{{ if resources.Get (printf "img/demos/%s.jpg" (replaceRE `^.*[?&]v=([^&]+).*$` "$1" .url)) }}{{ $stills = add $stills 1 }}{{ end }}{{ end }}
+        {{ if eq $stills (len .) }}
+        <div class="demos demos--cards"><span class="demos__label">{{ cond $ja $T.demos "Demos:" }}</span>
+          <ul class="demo-cards">{{ range . }}{{ $s := (resources.Get (printf "img/demos/%s.jpg" (replaceRE `^.*[?&]v=([^&]+).*$` "$1" .url))).Resize "480x webp q78" }}
+            <li><a class="demo-card" href="{{ .url }}"><span class="demo-card__img"><img src="{{ $s.RelPermalink }}" width="{{ $s.Width }}" height="{{ $s.Height }}" alt="" loading="lazy" decoding="async"><span class="demo-card__play" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M2.5 1.5v7l6-3.5z"/></svg></span></span><span class="demo-card__label">{{ cond $ja (.label_ja | default .label) .label }}</span></a></li>{{ end }}
+          </ul>
+        </div>
+        {{ else }}
         <div class="demos"><span class="demos__label">{{ cond $ja $T.demos "Demos:" }}</span>
           <span class="demos__list">{{ range . }}<a class="demo" href="{{ .url }}"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2.5 1.5v7l6-3.5z"/></svg>{{ cond $ja (.label_ja | default .label) .label }}</a>{{ end }}</span>
         </div>
+        {{ end }}
         {{ end }}
       </li>
       {{ end }}

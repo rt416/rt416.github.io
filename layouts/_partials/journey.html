@@ -1,0 +1,68 @@
+{{/* Career journey (data/journey.yaml): a trail winding steadily up a hillside, milestone dots on it,
+     the trail carrying on past the last one and fading out at the edge. Wide screens get the landscape
+     drawing, phones a portrait version of the same scene; screen readers get the list.
+     Pass (dict "ja" <bool>). */}}
+{{ $ja := .ja }}{{ $J := hugo.Data.journey }}
+<figure class="journey">
+  <svg class="journey__svg" viewBox="0 0 608 312" aria-hidden="true">
+    <defs><linearGradient id="journey-fade-x" gradientUnits="userSpaceOnUse" x1="0" x2="608"><stop offset="0" stop-color="#000"/><stop offset=".08" stop-color="#fff"/><stop offset=".92" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient><linearGradient id="journey-fade-y" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="284" gradientTransform=""><stop offset="0" stop-color="#000"/><stop offset=".06" stop-color="#fff"/><stop offset=".86" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient><mask id="journey-mx"><rect width="608" height="312" fill="url(#journey-fade-x)"/></mask><mask id="journey-my"><rect width="608" height="312" fill="url(#journey-fade-y)"/></mask><clipPath id="journey-land"><path d="{{ $J.back }}"/><path d="{{ $J.far }}"/></clipPath><filter id="journey-grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .36 0 0 0 0 .35 0 0 0 0 .33 1.6 0 0 0 -.62"/></filter></defs>
+    {{/* The landscape fades out at the edges, so it sits on the page rather than in a box. */}}
+    <g mask="url(#journey-mx)"><g mask="url(#journey-my)">
+      {{ $J.sun | safeHTML }}
+      <path class="back" d="{{ $J.back }}"/>
+      <path class="far" d="{{ $J.far }}"/>
+      <path class="ridge" d="{{ $J.ridge }}"/>
+      {{ $J.contours | safeHTML }}
+      <path class="mid" d="{{ $J.mid }}"/>
+      <path class="near" d="{{ $J.near }}"/>
+      {{ $J.scene | safeHTML }}
+      <rect class="grain" width="608" height="300" filter="url(#journey-grain)" clip-path="url(#journey-land)"/>
+    </g></g>
+    <path class="trail" d="{{ $J.trail }}"/>
+    <path class="ahead" d="{{ $J.ahead }}" mask="url(#journey-mx)"/>
+    {{ range $J.eras }}
+    <path class="era" d="M{{ .from }} 288V292H{{ .to }}V288"/>
+    <text class="eralab" x="{{ div (add .from .to) 2 }}" y="306">{{ cond $ja (.label_ja | default .label) .label }}</text>
+    {{ if .year }}<text class="yr" x="{{ .from }}" y="284">{{ .year }}</text>{{ end }}
+    {{ end }}
+    {{ range $i, $m := $J.milestones }}
+    {{ if eq (add $i 1) (len $J.milestones) }}<circle class="now" cx="{{ .x }}" cy="{{ .y }}" r="7"/>{{ end }}
+    <circle class="dot{{ if eq (add $i 1) (len $J.milestones) }} dot--now{{ end }}" cx="{{ .x }}" cy="{{ .y }}" r="3.2"/>
+    {{ if eq .side "above" }}<text class="lab" x="{{ sub .x 5 }}" y="{{ sub .y 7 }}" text-anchor="end">{{ else }}<text class="lab" x="{{ add .x 5 }}" y="{{ add .y 14 }}" text-anchor="start">{{ end }}{{ cond $ja (.label_ja | default .label) .label }}</text>
+    {{ end }}
+  </svg>
+  {{ $M := $J.mobile }}
+  <svg class="journey__svg journey__svg--m" viewBox="0 0 340 560" aria-hidden="true">
+    <defs><linearGradient id="journey-m-fade-x" gradientUnits="userSpaceOnUse" x1="0" x2="340"><stop offset="0" stop-color="#000"/><stop offset=".07" stop-color="#fff"/><stop offset=".93" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient><linearGradient id="journey-m-fade-y" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="560"><stop offset="0" stop-color="#000"/><stop offset=".04" stop-color="#fff"/><stop offset=".9" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient><mask id="journey-m-mx"><rect width="340" height="560" fill="url(#journey-m-fade-x)"/></mask><mask id="journey-m-my"><rect width="340" height="560" fill="url(#journey-m-fade-y)"/></mask><clipPath id="journey-m-land"><path d="{{ $M.back }}"/></clipPath><filter id="journey-m-grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .36 0 0 0 0 .35 0 0 0 0 .33 1.6 0 0 0 -.62"/></filter></defs>
+    <g mask="url(#journey-m-mx)"><g mask="url(#journey-m-my)">
+      {{ $M.sun | safeHTML }}
+      <path class="back" d="{{ $M.back }}"/>
+      <path class="far" d="{{ $M.far }}"/>
+      <path class="ridge" d="{{ $M.ridge }}"/>
+      {{ $M.contours | safeHTML }}
+      <path class="near" d="{{ $M.near }}"/>
+      {{ $M.scene | safeHTML }}
+      <rect class="grain" width="340" height="560" filter="url(#journey-m-grain)" clip-path="url(#journey-m-land)"/>
+    </g></g>
+    <path class="trail" d="{{ $M.trail }}" mask="url(#journey-m-my)"/>
+    <path class="ahead" d="{{ $M.ahead }}" mask="url(#journey-m-my)"/>
+    {{ range $J.eras }}
+    <path class="era" d="M14 {{ .m_from }}H10V{{ .m_to }}H14"/>
+    <text class="eralab eralab--m" x="20" y="{{ add (div (add .m_from .m_to) 2) 3.5 }}">{{ cond $ja (.label_ja | default .label) .label }}{{ with .year }} <tspan class="yr">{{ . }}</tspan>{{ end }}</text>
+    {{ end }}
+    {{ range $i, $p := $M.milestones }}
+    {{ $m := index $J.milestones $i }}{{ $now := eq (add $i 1) (len $M.milestones) }}
+    {{ if $now }}<circle class="now" cx="{{ .x }}" cy="{{ .y }}" r="7"/>{{ end }}
+    <circle class="dot{{ if $now }} dot--now{{ end }}" cx="{{ .x }}" cy="{{ .y }}" r="3.4"/>
+    <text class="lab lab--m" x="{{ sub .x 10 }}" y="{{ add .y 4 }}">{{ cond $ja ($m.label_ja | default $m.label) $m.label }}</text>
+    {{ end }}
+  </svg>
+  <ol class="journey__list" aria-label="{{ cond $ja "これまでの歩み" "Career so far" }}">
+    {{ range $i, $e := $J.eras }}
+    <li class="journey__era"><span>{{ cond $ja ($e.label_ja | default $e.label) $e.label }}{{ with $e.year }} · {{ . }}{{ end }}</span>
+      <ul>{{ range $J.milestones }}{{ if eq .era $i }}<li>{{ cond $ja (.label_ja | default .label) .label }}</li>{{ end }}{{ end }}</ul>
+    </li>
+    {{ end }}
+    <li class="journey__ahead" aria-hidden="true">…</li>
+  </ol>
+</figure>
