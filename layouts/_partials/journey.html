@@ -20,6 +20,7 @@
     </g></g>
     <path class="trail" d="{{ $J.trail }}"/>
     <path class="ahead" d="{{ $J.ahead }}" mask="url(#journey-mx)"/>
+    {{ $J.huts | safeHTML }}
     {{ range $J.eras }}
     <path class="era" d="M{{ .from }} 288V292H{{ .to }}V288"/>
     <text class="eralab" x="{{ div (add .from .to) 2 }}" y="306">{{ cond $ja (.label_ja | default .label) .label }}</text>
@@ -46,6 +47,7 @@
     </g></g>
     <path class="trail" d="{{ $M.trail }}" mask="url(#journey-m-my)"/>
     <path class="ahead" d="{{ $M.ahead }}" mask="url(#journey-m-my)"/>
+    {{ $M.huts | safeHTML }}
     {{ range $J.eras }}
     <path class="era" d="M14 {{ .m_from }}H10V{{ .m_to }}H14"/>
     <text class="eralab eralab--m" x="20" y="{{ add (div (add .m_from .m_to) 2) 3.5 }}">{{ cond $ja (.label_ja | default .label) .label }}{{ with .year }} <tspan class="yr">{{ . }}</tspan>{{ end }}</text>
