@@ -36,7 +36,12 @@ milestones = [  # label, label_ja, x, era, side
 xs = list(range(X0, X1, 6)) + [X1]
 trail = smooth([(x, trail_y(x)) for x in xs])
 # Beyond the last milestone the trail keeps climbing and fades out at the edge.
-ahead = smooth([(X1, trail_y(X1)), (530, trail_y(X1) - 12), (552, trail_y(X1) - 26), (576, trail_y(X1) - 42), (604, trail_y(X1) - 60)])
+AHEAD = [(X1, trail_y(X1)), (530, trail_y(X1) - 12), (552, trail_y(X1) - 26), (576, trail_y(X1) - 42), (604, trail_y(X1) - 60)]
+ahead = smooth(AHEAD)
+# A reserved slot for the next milestone, on the way ahead. The partial fills it only when the launch copy
+# (data/launch.yaml, journey) gives it a label: the trail then runs solid to it and on from there.
+NEXT = AHEAD[2]
+next_trail, next_ahead = smooth(AHEAD[:3]), smooth(AHEAD[2:])
 
 # Skyline: an even rhythm of soft crests that rises with the trail; the summit lies beyond the frame.
 def far_y(x):
@@ -123,7 +128,10 @@ def m_trail_x(y):
 m_ys = [516 - i * 38.2 for i in range(len(milestones))]
 m_trail = smooth([(m_trail_x(y), y) for y in [540] + [540 - k * 6 for k in range(1, 74)] + [m_ys[-1]] if y >= m_ys[-1]])
 yl = m_ys[-1]
-m_ahead = smooth([(m_trail_x(yl), yl), (m_trail_x(yl) + 6, yl - 22), (m_trail_x(yl) + 16, yl - 44), (m_trail_x(yl) + 30, yl - 70), (m_trail_x(yl) + 46, 4)])
+M_AHEAD = [(m_trail_x(yl), yl), (m_trail_x(yl) + 6, yl - 22), (m_trail_x(yl) + 16, yl - 44), (m_trail_x(yl) + 30, yl - 70), (m_trail_x(yl) + 46, 4)]
+m_ahead = smooth(M_AHEAD)
+M_NEXT = M_AHEAD[2]
+m_next_trail, m_next_ahead = smooth(M_AHEAD[:3]), smooth(M_AHEAD[2:])
 def m_far_y(x):
     return 118 - 30 * x / MW - 12 * (.5 + .5 * math.cos(2 * math.pi * (x - 262) / 112))
 def m_back_y(x):
@@ -133,11 +141,11 @@ m_far = m_ridge + f" L{MW} {MH} L0 {MH} Z"
 m_back = smooth([(x, m_back_y(x)) for x in range(0, MW + 1, 6)]) + f" L{MW} {MH} L0 {MH} Z"
 m_contours = "".join(f'<path class="contour c{k}" d="{smooth([(x, m_far_y(x) + 7 * k) for x in range(0, MW + 1, 6)])}"/>' for k in (1, 2))
 m_near = smooth([(0, 470), (90, 476), (180, 466), (260, 450), (MW, 440)]) + f" L{MW} {MH} L0 {MH} Z"
-m_sun = sun_at(50, 40, 14)
+m_sun = sun_at(140, 30, 13)
 m_scene = "".join([
     *(pine(x, y, h) for x, y, h in [(26, 548, 13), (38, 552, 16), (50, 547, 11), (300, 548, 12), (312, 552, 15),
                                      (316, 372, 10), (327, 375, 12), (300, 236, 9), (310, 239, 11)]),
-    bird(92, 42, 3.8), bird(104, 36, 3.3), bird(82, 49, 3.1), bird(116, 31, 2.8),
+    bird(180, 34, 3.8), bird(192, 28, 3.3), bird(170, 41, 3.1), bird(204, 23, 2.8),
 ])
 # Beside the trail on the open right-hand side, level with the gap between eras.
 m_huts = "".join(hut(m_trail_x((m_ys[a] + m_ys[a + 1]) / 2) + 20, (m_ys[a] + m_ys[a + 1]) / 2 + 6) for a in (1, 4, 6))
@@ -152,10 +160,13 @@ out = ["# Career journey scene on the home page, between the intro and Selected 
        f"scene: '{scene}'", f"huts: '{huts}'", "milestones:"]
 for lab, ja, x, era, side in milestones:
     out.append(f'  - {{ label: "{lab}", label_ja: "{ja}", x: {x}, y: {trail_y(x):.1f}, era: {era}, side: "{side}" }}')
+out += ["next:", f"  x: {NEXT[0]:.1f}", f"  y: {NEXT[1]:.1f}", f'  trail: "{next_trail}"', f'  ahead: "{next_ahead}"',
+        "  era_from: 536", "  era_to: 600"]
 out.append("eras:")
 for (lab, ja, a, b, yr), (_, _, _, (m0, m1)) in zip(eras, m_eras):
     out.append(f'  - {{ label: "{lab}", label_ja: "{ja}", from: {a}, to: {b}, m_from: {m0:.1f}, m_to: {m1:.1f}' + (f', year: "{yr}"' if yr else "") + " }")
 out += ["mobile:", f'  back: "{m_back}"', f'  far: "{m_far}"', f'  ridge: "{m_ridge}"', f"  contours: '{m_contours}'",
         f"  sun: '{m_sun}'", f'  near: "{m_near}"', f'  trail: "{m_trail}"', f'  ahead: "{m_ahead}"', f"  scene: '{m_scene}'", f"  huts: '{m_huts}'",
         "  milestones:"] + [f"    - {{ x: {m_trail_x(y):.1f}, y: {y:.1f} }}" for y in m_ys]
+out += ["  next:", f"    x: {M_NEXT[0]:.1f}", f"    y: {M_NEXT[1]:.1f}", f'    trail: "{m_next_trail}"', f'    ahead: "{m_next_ahead}"']
 open(sys.argv[1], "w", encoding="utf-8").write("\n".join(out) + "\n")

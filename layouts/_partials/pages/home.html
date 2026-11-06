@@ -8,7 +8,7 @@
   <section class="intro" aria-label="{{ cond $ja "自己紹介" "Introduction" }}">
     {{ partial "portrait.html" (dict "size" 128) }}
     {{ if $launched }}
-    {{ if $ja }}<p>{{ with $L.mission_ja }}{{ . }}{{ else }}{{ partial "todo.html" "Japanese launch mission (launch.yaml mission_ja)" }}{{ end }}</p>
+    {{ if $ja }}<p>{{ with $L.mission_ja }}{{ . }}{{ else }}{{ $S.intro }} {{ partial "todo.html" "Japanese launch mission (launch.yaml mission_ja)" }}{{ end }}</p>
     {{ else }}<p>{{ $L.mission }}{{ with $L.mission_status }} {{ partial "todo.html" . }}{{ end }}</p>{{ end }}
     {{ else }}
     <p>{{ $S.intro }}{{ with $S.intro_status }} {{ partial "todo.html" . }}{{ end }}</p>
@@ -17,7 +17,7 @@
     <div class="intro__links">{{ partial "contact-links.html" . }}</div>
   </section>
 
-  {{ partial "journey.html" (dict "ja" $ja) }}
+  {{ partial "journey.html" (dict "ja" $ja "launched" $launched) }}
 
   {{ if site.Params.show_news }}
   {{ $news := partial "news-items.html" . }}

@@ -1,7 +1,7 @@
 {{ $launched := partial "launched.html" . }}
 {{ $S := hugo.Data.site }}
 {{ $ja := eq .Params.lang "ja" }}
-{{ $desc := .Params.description | default (cond $ja hugo.Data.ja.description (cond $launched hugo.Data.launch.description $S.description)) }}
+{{ $desc := .Params.description | default (cond $ja (cond (and $launched hugo.Data.launch.description_ja) hugo.Data.launch.description_ja hugo.Data.ja.description) (cond $launched hugo.Data.launch.description $S.description)) }}
 {{ $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">

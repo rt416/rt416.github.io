@@ -1,20 +1,25 @@
+{{/* Launch-only page. Sections without approved copy in data/launch.yaml are left out of the built site;
+     the dev server shows a TODO for each instead. */}}
 {{ $W := hugo.Data.launch.work_with_me }}
 <article>
   <h1 class="page-h">Work with me</h1>
-  <section class="prose" aria-label="Why now">
-    {{ with $W.why_now }}<p>{{ . }}</p>{{ else }}{{ partial "todo.html" "approved 'why now' wording" }}{{ end }}
-  </section>
+  {{ with $W.why_now }}<section class="prose" aria-label="Why now"><p>{{ . }}</p></section>
+  {{ else }}{{ partial "todo.html" "approved 'why now' wording" }}{{ end }}
+  {{ with $W.problems }}
   <section class="sec" id="problems" aria-labelledby="problems-h">
     <h2 id="problems-h">Open problems</h2>
-    <ul class="prose">{{ range $W.problems }}<li><p>{{ . }}</p></li>{{ end }}</ul>
+    <ul class="prose">{{ range . }}<li><p>{{ . }}</p></li>{{ end }}</ul>
   </section>
+  {{ end }}
   <section class="sec prose" id="how" aria-labelledby="how-h">
     <h2 id="how-h">How I work</h2>
     <p>{{ $W.how_i_work }} {{ $W.growth }}</p>
     {{ with $W.values }}<p>{{ . }}</p>{{ else }}{{ partial "todo.html" "what you value in colleagues" }}{{ end }}
   </section>
+  {{ with $W.careers_url }}
   <section class="sec" id="roles" aria-labelledby="roles-h">
     <h2 id="roles-h">Open roles</h2>
-    {{ with $W.careers_url }}<p><a href="{{ . }}">{{ $W.careers_label }}</a></p>{{ else }}{{ partial "todo.html" "careers URL" }}{{ end }}
+    <p><a href="{{ . }}">{{ $W.careers_label }}</a></p>
   </section>
+  {{ else }}{{ partial "todo.html" "careers URL" }}{{ end }}
 </article>

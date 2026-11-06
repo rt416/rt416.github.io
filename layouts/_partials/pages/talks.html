@@ -1,6 +1,8 @@
 {{ $launched := partial "launched.html" . }}
 {{ $writing := hugo.Data.writing | default slice }}
 {{ $essay := cond $launched hugo.Data.launch.essay nil }}
+{{/* The launch essay is listed once it has a link; before that only the dev server shows it, as a placeholder. */}}
+{{ if and $essay (not $essay.url) (not hugo.IsServer) }}{{ $essay = nil }}{{ end }}
 <article>
   <h1 class="page-h">Talks</h1>
   <p class="invite">For invitations, write to {{ partial "email.html" . }}.</p>
