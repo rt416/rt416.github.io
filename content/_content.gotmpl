@@ -1,7 +1,7 @@
 {{/* Pages that depend on data rather than content files. */}}
 
-{{/* Work with me exists only at launch. */}}
-{{ if partial "launched.html" . }}
+{{/* Work with me exists only at launch, and only while the launch copy has a work_with_me section. */}}
+{{ if and (partial "launched.html" .) hugo.Data.launch.work_with_me }}
   {{ $.AddPage (dict "path" "work-with-me" "kind" "page" "title" "Work with me" "params" (dict "template" "work-with-me")) }}
 {{ end }}
 
