@@ -8,12 +8,12 @@ org: "Pathos"
 
 # Home page: these paragraphs replace the "Hi, I'm Ryu…" intro; past_first replaces the Google DeepMind paragraph.
 opening:
-  - "Hi, I’m Ryu. I recently joined [Pathos](https://www.linkedin.com/company/pathos-ai/) as Chief AI Officer, to help make their ambition of re-engineering drug development with AI a reality. Over the last 10 years, I’ve built AI systems for healthcare and biomedical applications, and I’m most passionate about creating AI that empowers human experts and transforms their work in ways that are lasting, scalable and joyful."
+  - "Hi, I’m Ryu. I recently joined [Pathos](https://www.linkedin.com/company/pathos-ai/) as Chief AI Officer, to help make their ambition of re-engineering drug development with AI a reality. Over the last 10 years, I’ve built AI systems for healthcare and biomedical applications, and I’m most passionate about creating AI that empowers human experts and transforms their work in ways that are lasting, scalable and joyful. [I’m hiring!](/work-with-me/)"
 past_first: "Before Pathos, I spent four years at Google DeepMind as a Staff Research Scientist, working on foundational research and real-world deployment of LLM-based systems for healthcare. Most recently, I led research on [AI co-clinician](https://x.com/GoogleDeepMind/status/2049867061279457761), Google DeepMind’s new initiative to reimagine how care is delivered."
 
 # Japanese home page (/ja/).
 opening_ja:
-  - "こんにちは、丹野龍太郎です。AI で医薬品開発をつくり直すという [Pathos](https://www.linkedin.com/company/pathos-ai/) の大きな目標を実現するため、最近 Chief AI Officer として加わりました。この10年間、医療・生命科学の分野でAIシステムの開発に携わってきました。私がいまいちばん情熱を注いでいるのは、AI技術を駆使して専門家の力をさらに引き出し、その仕事を、持続可能で、より多くの人に届く、やり甲斐のある新しい形へと変えていくことです。"
+  - "こんにちは、丹野龍太郎です。AI で医薬品開発をつくり直すという [Pathos](https://www.linkedin.com/company/pathos-ai/) の大きな目標を実現するため、最近 Chief AI Officer として加わりました。この10年間、医療・生命科学の分野でAIシステムの開発に携わってきました。私がいまいちばん情熱を注いでいるのは、AI技術を駆使して専門家の力をさらに引き出し、その仕事を、持続可能で、より多くの人に届く、やり甲斐のある新しい形へと変えていくことです。[採用中です！](/work-with-me/)"
 past_first_ja: "Pathos に加わる前は、Google DeepMind で4年間 Staff Research Scientist として、医療向けLLMシステムの基礎研究から実社会での展開までに取り組みました。直近では、医療の届け方そのものを捉え直す Google DeepMind の新しい取り組み、[AI co-clinician](https://x.com/GoogleDeepMind/status/2049867061279457761) の研究をリードしました。"
 
 # Search and social descriptions.
@@ -39,3 +39,16 @@ news:
 
 # For organisers (not shown on the site).
 short_bio: "Ryutaro Tanno is Chief AI Officer at Pathos, which is reimagining how drugs are developed with AI, starting with cancer and now expanding into neurology. Before Pathos he spent four years as a Staff Research Scientist at Google DeepMind, where he led research on the AI co-clinician, was a co-technical lead of the AMIE research programme on conversational diagnostic AI and co-led multimodality for Med-Gemini. Before that he was a Senior Researcher at Microsoft Research Cambridge. He holds a PhD in Computer Vision and Machine Learning from UCL."
+
+# Work with me page (/work-with-me/): linked from "I'm hiring!" on the home page and from every footer.
+work_with_me:
+  title: "Work with me"
+  footer_link: "I’m hiring: join my team at Pathos"
+  intro:
+    - "I recently joined [Pathos](https://www.linkedin.com/company/pathos-ai/) as Chief AI Officer. At Pathos, AI shapes every big decision we make: which drugs to develop, which patients to treat and how to run the trials."
+    - "We don’t build models and agents in isolation. We own our drug assets and run our own clinical trials, which puts us in a rare position to close the loop: data from hospitals and our wet lab flows back into the AI system and informs the next drug decisions. I’m here to build an AI drug engine that keeps learning over time."
+    - "After 20+ years in London, I have moved to New York, where I’m expanding my team with new Members of Technical Staff to accelerate our AI work. We want people who care as much about the drugs as about the models, and who want their work tested against real lab and clinical data. Focus areas include, but aren’t limited to, mid- and post-training, data and evaluation, and memory and continual learning."
+  # Closing line: FORM is replaced by careers_url.
+  careers_url: "https://forms.gle/UBwsUnRuGxkMZAGAA"
+  apply: "If you’re interested, [fill out this form](FORM) or message me on [LinkedIn](https://www.linkedin.com/in/ryutaro-tanno-180455306/)."
+  apply_without_form: "If you’re interested, message me on [LinkedIn](https://www.linkedin.com/in/ryutaro-tanno-180455306/)."
