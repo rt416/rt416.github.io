@@ -7,7 +7,7 @@
   {{ else }}{{ partial "todo.html" "approved 'why now' wording" }}{{ end }}
   {{ with $W.problems }}
   <section class="sec" id="problems" aria-labelledby="problems-h">
-    <h2 id="problems-h">Open problems</h2>
+    <h2 id="problems-h">{{ $W.problems_heading | default "Open problems" }}</h2>
     <ul class="prose">{{ range . }}<li><p>{{ . }}</p></li>{{ end }}</ul>
   </section>
   {{ end }}

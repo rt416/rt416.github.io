@@ -7,13 +7,20 @@
 
   <section class="intro" aria-label="{{ cond $ja "自己紹介" "Introduction" }}">
     {{ partial "portrait.html" (dict "size" 128) }}
+    {{/* At launch, 'opening' paragraphs from data/launch.yaml (or the one-line mission) replace the intro,
+         and 'past_first' can replace the first past paragraph; each has a _ja form for the Japanese page. */}}
     {{ if $launched }}
-    {{ if $ja }}<p>{{ with $L.mission_ja }}{{ . }}{{ else }}{{ $S.intro }} {{ partial "todo.html" "Japanese launch mission (launch.yaml mission_ja)" }}{{ end }}</p>
-    {{ else }}<p>{{ $L.mission }}{{ with $L.mission_status }} {{ partial "todo.html" . }}{{ end }}</p>{{ end }}
+    {{ $opening := cond $ja $L.opening_ja $L.opening }}
+    {{ with $opening }}{{ range . }}<p>{{ . | markdownify }}</p>{{ end }}{{ with $L.opening_status }}{{ partial "todo.html" . }}{{ end }}
+    {{ else }}{{ if $ja }}<p>{{ with $L.mission_ja }}{{ . }}{{ else }}{{ $S.intro }} {{ partial "todo.html" "Japanese launch opening (launch.yaml opening_ja)" }}{{ end }}</p>
+    {{ else }}<p>{{ $L.mission }}{{ with $L.mission_status }} {{ partial "todo.html" . }}{{ end }}</p>{{ end }}{{ end }}
     {{ else }}
     <p>{{ $S.intro }}{{ with $S.intro_status }} {{ partial "todo.html" . }}{{ end }}</p>
     {{ end }}
-    {{ range $S.past }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{ range $i, $p := $S.past }}
+    {{ if and $launched (eq $i 0) }}{{ with cond $ja $L.past_first_ja $L.past_first }}{{ $p = . }}{{ end }}{{ end }}
+    <p>{{ $p | markdownify }}</p>
+    {{ end }}
     <div class="intro__links">{{ partial "contact-links.html" . }}</div>
   </section>
 
