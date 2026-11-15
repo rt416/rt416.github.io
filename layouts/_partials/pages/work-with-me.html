@@ -1,25 +1,12 @@
-{{/* Launch-only page. Copy comes from data/launch.yaml (work_with_me); sections without copy are left out of the
-     built site, and the dev server shows a TODO for each instead. Paragraph fields accept Markdown. */}}
+{{/* Launch-only page. Copy comes from data/launch.yaml (work_with_me); paragraph fields accept Markdown.
+     The closing line uses 'apply' with FORM replaced by careers_url, or 'apply_without_form' until there is a form link.
+     Missing copy is left out of the built site; the dev server shows a TODO for each gap instead. */}}
 {{ $W := hugo.Data.launch.work_with_me }}
 <article>
   <h1 class="page-h">{{ $W.title | default "Work with me" }}</h1>
-  {{ with $W.intro }}<section class="prose" aria-label="About the work">{{ range . }}<p>{{ . | markdownify }}</p>{{ end }}</section>
-  {{ else }}{{ partial "todo.html" "intro paragraphs" }}{{ end }}
-  {{ with $W.problems }}
-  <section class="sec" id="problems" aria-labelledby="problems-h">
-    <h2 id="problems-h">{{ $W.problems_heading | default "Open problems" }}</h2>
-    <ul class="prose">{{ range . }}<li><p>{{ . | markdownify }}</p></li>{{ end }}</ul>
-  </section>
-  {{ end }}
-  {{ with $W.how_i_work }}
-  <section class="sec prose" id="how" aria-labelledby="how-h">
-    <h2 id="how-h">How I work</h2>
-    <p>{{ . }} {{ $W.growth }}</p>
-  </section>
-  {{ end }}
-  <section class="sec prose" id="apply" aria-labelledby="apply-h">
-    <h2 id="apply-h">{{ $W.apply_heading | default "Apply" }}</h2>
-    {{ with $W.careers_url }}<p><a href="{{ . }}">{{ $W.careers_label }}</a></p>{{ else }}{{ partial "todo.html" "application form link (careers_url)" }}{{ end }}
-    {{ with $W.apply_note }}<p>{{ . | markdownify }}</p>{{ end }}
+  <section class="prose" aria-label="About the work">
+    {{ range $W.intro }}<p>{{ . | markdownify }}</p>{{ else }}{{ partial "todo.html" "intro paragraphs" }}{{ end }}
+    {{ with $W.careers_url }}<p>{{ replace $W.apply "FORM" . | markdownify }}</p>
+    {{ else }}{{ with $W.apply_without_form }}<p>{{ . | markdownify }}</p>{{ end }}{{ partial "todo.html" "application form link (careers_url)" }}{{ end }}
   </section>
 </article>
