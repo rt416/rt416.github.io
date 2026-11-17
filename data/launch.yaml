@@ -9,12 +9,12 @@ org: "Pathos AI"
 # Home page: these paragraphs replace the "Hi, I'm Ryu…" intro; past_first replaces the Google DeepMind paragraph.
 opening:
   - "Hi, I’m Ryu. I recently joined [Pathos AI](https://www.linkedin.com/company/pathos-ai/) as Chief AI Officer, to help make their ambition of re-engineering drug development with AI a reality. Over the last 10 years, I’ve built AI systems for healthcare and biomedical applications, and I’m most passionate about creating AI that empowers human experts and transforms their work in ways that are lasting, scalable and joyful. [I’m hiring!](/work-with-me/)"
-past_first: "Before Pathos AI, I spent four years at [Google DeepMind](https://deepmind.google/) as a Staff Research Scientist, working on foundational research and real-world deployment of LLM-based systems for healthcare. Most recently, I led research on [AI co-clinician](https://x.com/GoogleDeepMind/status/2049867061279457761), Google DeepMind’s new initiative to reimagine how care is delivered."
+past_first: "Before Pathos AI, I spent four years at [Google DeepMind](https://deepmind.google/), working on foundational research and real-world deployment of LLM-based systems for healthcare. Most recently, I led research on [AI co-clinician](https://x.com/GoogleDeepMind/status/2049867061279457761), Google DeepMind’s new initiative to reimagine how care is delivered."
 
 # Japanese home page (/ja/).
 opening_ja:
   - "こんにちは、丹野龍太郎です。現在、[Pathos AI](https://www.linkedin.com/company/pathos-ai/) で Chief AI Officer を務めています。この10年間、医療・生命科学の分野でAIシステムの開発に携わってきました。私がいまいちばん情熱を注いでいるのは、AI技術を駆使して専門家の力をさらに引き出し、その仕事を、持続可能で、より多くの人に届く、やり甲斐のある新しい形へと変えていくことです。[採用中です！](/work-with-me/)"
-past_first_ja: "Pathos AI に加わる前は、[Google DeepMind](https://deepmind.google/) で4年間 Staff Research Scientist として、医療向けLLMシステムの基礎研究から実社会での展開までに取り組みました。直近では、医療の届け方そのものを捉え直す Google DeepMind の新しい取り組み、[AI co-clinician](https://x.com/GoogleDeepMind/status/2049867061279457761) の研究をリードしました。"
+past_first_ja: "Pathos AI に加わる前は、[Google DeepMind](https://deepmind.google/) で4年間、医療向けLLMシステムの基礎研究から実社会での展開までに取り組みました。直近では、医療の届け方そのものを捉え直す Google DeepMind の新しい取り組み、[AI co-clinician](https://x.com/GoogleDeepMind/status/2049867061279457761) の研究をリードしました。"
 
 # Search and social descriptions.
 description: "Ryutaro Tanno is Chief AI Officer at Pathos AI, reimagining how drugs are developed with AI, starting with cancer and now expanding into neurology."
